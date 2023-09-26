@@ -2,27 +2,9 @@ const startBtn = document.getElementById("startBtn");
 const pauseBtn = document.getElementById("pauseBtn");
 const timer = document.getElementById("timer");
 const poseList = document.getElementById("poseList");
-const audio = new Audio('pong.wav');
-const audio_30s = new Audio('30s.wav');
-const audio_1m = new Audio('1m.wav');
-const audio_2m = new Audio('2m.wav');
-const audio_5m = new Audio('5m.wav');
-const audio_7m = new Audio('7m.wav');
-const audio_10m = new Audio('10m.wav');
-const audio_5m_pause = new Audio('paus.wav');
-const pauseColor = "#FFFFE0"
-const runPoseColor = "#f0fff0"
 
-const inputTimes = [
-    { title: "30 sekunders pose", count: 100, duration: 1, color:  runPoseColor, audio: audio_30s },
-    { title: "2 minut pose", count: 3, duration: 2 * 60, color:  runPoseColor, audio: audio_2m },
-    { title: "7 minuter pose", count: 1, duration: 7 * 60, color: runPoseColor, audio: audio_7m },
-    { title: "1 minut pose", count: 5, duration: 1 * 60, color:  runPoseColor, audio: audio_1m },
-    { title: "1 minut pose", count: 5, duration: 1 * 60, color:  runPoseColor, audio: audio_1m },
-    { title: "5 minuter paus", count: 1, duration: 5 * 60, color:  "#fff0f0", audio: audio_5m_pause },
-    { title: "2 minut pose", count: 4, duration: 2 * 60, color:  runPoseColor, audio: audio_2m },
-    { title: "5 minut pose", count: 1, duration: 5 * 60, color:  runPoseColor, audio: audio_5m },
-];
+
+import inputTimes from './inputTimes.js';
 
 let timerInterval;
 let totalTime;
