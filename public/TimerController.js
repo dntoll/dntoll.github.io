@@ -24,6 +24,7 @@ class TimerController {
     onStart() {
         if (this.#timer.isStarted() == false) {
             this.#timer.start()
+            this.#poseList.getActivePost().audio.start()
         } else {
             this.#timer.pause()
         }
@@ -41,6 +42,7 @@ class TimerController {
         this.#timer.reset(this.#poseList.getActivePost())
         if (wasStarted) {
             this.#timer.start()
+            newPose.audio.play();
         }
 
         this.#poseListView.updatePoseList();
