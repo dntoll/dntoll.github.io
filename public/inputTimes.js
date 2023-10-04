@@ -11,7 +11,7 @@ const runPoseColor = "#f0fff0"
 
 
 const inputTimes = [
-    { title: "30 sekunders pose", count: 10, duration: 30, color:  runPoseColor, audio: audio_30s },
+    { title: "3 sekunders pose", count: 10, duration: 3, color:  runPoseColor, audio: audio_30s },
     { title: "2 minut pose", count: 3, duration: 2 * 60, color:  runPoseColor, audio: audio_2m },
     { title: "7 minuter pose", count: 1, duration: 7 * 60, color: runPoseColor, audio: audio_7m },
     { title: "1 minut pose", count: 5, duration: 1 * 60, color:  runPoseColor, audio: audio_1m },
