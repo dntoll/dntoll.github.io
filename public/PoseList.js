@@ -1,5 +1,6 @@
 import inputTimes from './inputTimes.js';
 import Pose from './Pose.js';
+import PoseTitle from './PoseTitle.js';
 
 
 class PoseList {
@@ -13,10 +14,20 @@ class PoseList {
 
     #generatePoses() {
         inputTimes.forEach((input) => {
+
+            
+            this.#poses.push(new PoseTitle(
+                input.title, 
+                input.count,
+                input.duration, 
+            ));
+
             for (let i = 0; i < input.count; i++) {
                 const indexInGroup = i + 1;
                 this.#poses.push(new Pose(
-                                `${input.title} (${indexInGroup} av ${input.count})`, 
+                                input.title,
+                                indexInGroup,
+                                input.count, 
                                 input.duration, 
                                 input.color,
                                 input.audio
@@ -49,10 +60,16 @@ class PoseList {
 
     getFirst() {
         this.#currentPose = 0
+        if (this.#poses[this.#currentPose] instanceof PoseTitle) {
+            this.#currentPose++
+        }
         return this.#poses[this.#currentPose]
     }
 
     getActivePost() {
+        if (this.#poses[this.#currentPose] instanceof PoseTitle) {
+            this.#currentPose++
+        }
         return this.#poses[this.#currentPose]
     }
 
@@ -60,6 +77,9 @@ class PoseList {
 
     getNext() {
         this.#currentPose++
+        if (this.#poses[this.#currentPose] instanceof PoseTitle) {
+            this.#currentPose++
+        }
         return this.#poses[this.#currentPose]
     }
 }

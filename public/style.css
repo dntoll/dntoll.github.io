@@ -17,9 +17,9 @@ body {
   background-color: #f0f0f0;
 }
 
-.timer .pose-title {
+#posetitle {
   margin-right: 10px;
-  font-size: 36px;
+  font-size: 72px;
   font-weight: normal;
   vertical-align: middle;
 }

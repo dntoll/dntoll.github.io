@@ -1,26 +1,19 @@
 
 
-class Pose {
+class PoseTitle {
     title
-    indexInGroup
     count
     duration
-    color
-    audio
 
-    constructor(title, indexInGroup, count, duration, color, audio) {
+    constructor( title, count, duration) {
         this.title = title
-        this.indexInGroup = indexInGroup;
         this.count = count
         this.duration = duration
-        this.color = color
-        this.audio = audio
     }
-
 
     timeString() {
         return `${Math.floor(this.duration / 60)}:${String(this.duration % 60).padStart(2, "0")}`;
     }
 }
 
-export default Pose;
+export default PoseTitle;
