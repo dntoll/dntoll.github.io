@@ -20,7 +20,7 @@ class Timerview {
         this.#timerSpan.innerHTML = `${Math.floor(this.#timer.getTimeLeft() / 60)}:${String(this.#timer.getTimeLeft() % 60).padStart(2, "0")}`;
         this.#posetitle.innerHTML = `${pose.title} ${pose.timeString()} (${pose.indexInGroup} av ${pose.count})`;
 
-        this.#timerSpan.backgroundColor = pose.color;
+        this.#timerSpan.style.backgroundColor = pose.color;
     }
 }
 
