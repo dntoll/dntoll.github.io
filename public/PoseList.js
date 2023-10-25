@@ -29,6 +29,7 @@ class PoseList {
                                 indexInGroup,
                                 input.count, 
                                 input.duration, 
+                                input.extraTime,
                                 input.color,
                                 input.audio
                             ));
@@ -49,10 +50,7 @@ class PoseList {
         
         throw new Error("Pose not found");
     }
-/*
-    getActivePosID() {
-        return this.#currentPose
-    }*/
+
 
     getPoses() {
         return this.#poses
@@ -72,8 +70,6 @@ class PoseList {
         }
         return this.#poses[this.#currentPose]
     }
-
-    
 
     getNext() {
         this.#currentPose++

@@ -17,10 +17,21 @@ class Timerview {
     }
 
     update(pose) {
-        this.#timerSpan.innerHTML = `${Math.floor(this.#timer.getTimeLeft() / 60)}:${String(this.#timer.getTimeLeft() % 60).padStart(2, "0")}`;
+
+        if (this.#timer.hasExtraTime()) {
+            this.#timerSpan.innerHTML = " - " + this.#getTimeString(this.#timer.getExtraTime());
+            this.#timerSpan.style.backgroundColor = "#CCCCA0";
+        } else {
+            this.#timerSpan.innerHTML = this.#getTimeString(this.#timer.getTimeLeft());
+            this.#timerSpan.style.backgroundColor = pose.color;
+        }
         this.#posetitle.innerHTML = `${pose.title} ${pose.timeString()} (${pose.indexInGroup} av ${pose.count})`;
 
-        this.#timerSpan.style.backgroundColor = pose.color;
+        
+    }
+
+    #getTimeString(timeLeft) {
+        return `${Math.floor(timeLeft / 60)}:${String(timeLeft % 60).padStart(2, "0")}`
     }
 }
 

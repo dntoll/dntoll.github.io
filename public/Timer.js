@@ -6,6 +6,7 @@ class Timer {
         this.timerId = null;
         this.isRunning = false;
         this.elapsedTime = 0;
+        this.extraTime = 0;
         this.maxTime = 0;
     }
 
@@ -15,6 +16,14 @@ class Timer {
 
     getTimeLeft() {
         return (this.maxTime - this.elapsedTime)/1000
+    }
+
+    hasExtraTime() {
+        return this.extraTime > 0
+    }
+
+    getExtraTime() {
+        return (this.extraTime)/1000
     }
 
     start() {
@@ -27,7 +36,13 @@ class Timer {
     }
 
     #onInterval() {
-        this.elapsedTime += this.interval;
+
+        if (this.extraTime > 0) {
+            this.extraTime -= this.interval
+        } else {
+            this.elapsedTime += this.interval;
+        }
+
         if (this.elapsedTime > this.maxTime) {
             this.callbackDone(this.elapsedTime);
             
@@ -46,6 +61,7 @@ class Timer {
     reset(pose) {
         this.maxTime = pose.duration * 1000 //duration is in seconds and elapsedTime in milliseconds
         this.elapsedTime = 0;
+        this.extraTime = pose.extraTime * 1000;
     }
 
     isStarted() {

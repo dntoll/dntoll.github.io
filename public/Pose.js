@@ -8,11 +8,12 @@ class Pose {
     color
     audio
 
-    constructor(title, indexInGroup, count, duration, color, audio) {
+    constructor(title, indexInGroup, count, duration, extraTime, color, audio) {
         this.title = title
-        this.indexInGroup = indexInGroup;
+        this.indexInGroup = indexInGroup
         this.count = count
         this.duration = duration
+        this.extraTime = extraTime
         this.color = color
         this.audio = audio
     }
