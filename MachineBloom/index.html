@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=2" />
     <style>
       .page-hero {
         position: relative;
@@ -38,9 +38,9 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center 40%;
+        object-position: center center;
         animation: slowZoom 16s var(--ease) forwards;
-        transform: scale(1.05);
+        transform: scale(1.04);
       }
 
       @keyframes slowZoom {
@@ -186,21 +186,25 @@
       <a class="nav-brand" href="/">Curious Engineer Studio</a>
       <div class="nav-links">
         <a href="/MachineBloom/">Machine Bloom</a>
+        <a href="/MachineBloom/the-world/">
+          <span data-lang="en">The World</span>
+          <span data-lang="sv" hidden>Världen</span>
+        </a>
         <a href="/MachineBloom/playtest/">
           <span data-lang="en">Playtest</span>
           <span data-lang="sv" hidden>Speltest</span>
         </a>
         <a href="/MachineBloom/privacy/">Privacy</a>
         <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
-          <button type="button" data-set-lang="sv" aria-pressed="false">SV</button>
+          <a href="?lang=en" data-set-lang="en" aria-pressed="true">EN</a>
+          <a href="?lang=sv" data-set-lang="sv" aria-pressed="false">SV</a>
         </div>
       </div>
     </nav>
 
     <header class="page-hero">
       <div class="page-hero-media" aria-hidden="true">
-        <img src="/assets/machinebloom/screenshot-01.png" alt="" width="1920" height="1080" />
+        <img src="/assets/machinebloom/hero-bg-center.jpg" alt="" width="1920" height="1080" />
       </div>
       <div class="page-hero-inner">
         <p class="eyebrow fade-up">Curious Engineer Studio</p>
@@ -220,6 +224,10 @@
             href="https://play.google.com/store/apps/details?id=se.curiousengineerstudio.machinebloom"
             >Google Play</a
           >
+          <a class="btn btn-ghost" href="/MachineBloom/the-world/">
+            <span data-lang="en">The World</span>
+            <span data-lang="sv" hidden>Världen</span>
+          </a>
           <a class="btn btn-ghost" href="/MachineBloom/playtest/">
             <span data-lang="en">Closed playtest</span>
             <span data-lang="sv" hidden>Stängt speltest</span>
@@ -323,6 +331,6 @@
         <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
       </p>
     </footer>
-    <script src="/i18n.js"></script>
+    <script src="/i18n.js?v=2"></script>
   </body>
 </html>

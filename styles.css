@@ -98,7 +98,7 @@ a:hover {
   border-radius: 0.35rem;
 }
 
-.lang-switch button {
+.lang-switch a {
   appearance: none;
   border: 0;
   background: transparent;
@@ -109,14 +109,15 @@ a:hover {
   letter-spacing: 0.06em;
   padding: 0.35rem 0.55rem;
   border-radius: 0.25rem;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.lang-switch button:hover {
+.lang-switch a:hover {
   color: var(--ink);
 }
 
-.lang-switch button.is-active {
+.lang-switch a.is-active {
   background: var(--bloom-soft);
   color: var(--bloom);
 }

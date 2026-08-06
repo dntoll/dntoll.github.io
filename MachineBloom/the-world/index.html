@@ -1,0 +1,1116 @@
+<!doctype html>
+<html lang="en" data-default-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      data-i18n-meta="content"
+      data-i18n-en="The world of Machine Bloom — Laser, Flame, Bomb, and support towers, plus the machines you face."
+      data-i18n-sv="Världen i Machine Bloom — Laser-, Flame-, Bomb- och stödtorn, plus maskinerna du möter."
+      content="The world of Machine Bloom — Laser, Flame, Bomb, and support towers, plus the machines you face."
+    />
+    <title
+      data-i18n-meta="text"
+      data-i18n-en="The World | Machine Bloom"
+      data-i18n-sv="Världen | Machine Bloom"
+    >
+      The World | Machine Bloom
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=2" />
+    <style>
+      .world {
+        width: min(100% - 2.5rem, 72rem);
+        margin: 0 auto;
+        padding: 7.5rem 0 4rem;
+      }
+
+      .world .eyebrow {
+        margin: 0 0 0.75rem;
+        color: var(--bloom);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .world > h1 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: clamp(2.4rem, 7vw, 4rem);
+        letter-spacing: -0.04em;
+        line-height: 1.02;
+      }
+
+      .world > .lede {
+        margin: 1.1rem 0 0;
+        max-width: 42rem;
+        color: var(--ink-muted);
+        font-size: 1.08rem;
+      }
+
+      .world-section {
+        margin-top: 3.5rem;
+      }
+
+      .world-section > h2 {
+        margin: 0 0 0.75rem;
+        font-family: var(--font-display);
+        font-size: clamp(1.7rem, 4vw, 2.4rem);
+        letter-spacing: -0.03em;
+      }
+
+      .section-lede {
+        margin: 0 0 1.5rem;
+        max-width: 42rem;
+        color: var(--ink-muted);
+      }
+
+      .tower-columns {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .tower-col {
+        border: 1px solid var(--line);
+        background: rgba(10, 26, 22, 0.88);
+        min-width: 0;
+      }
+
+      .tower-col-head {
+        padding: 0.95rem 1rem 0.85rem;
+        border-bottom: 1px solid var(--line);
+        background: radial-gradient(circle at 0% 0%, var(--bloom-soft), transparent 70%);
+      }
+
+      .tower-col-head h3 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1.15rem;
+        letter-spacing: -0.02em;
+      }
+
+      .tower-col-head p {
+        margin: 0.35rem 0 0;
+        color: var(--ink-muted);
+        font-size: 0.88rem;
+      }
+
+      .tower-item {
+        display: grid;
+        grid-template-columns: 4.25rem 1fr;
+        gap: 0.75rem;
+        align-items: center;
+        padding: 0.85rem 0.95rem;
+        border-top: 1px solid rgba(110, 207, 154, 0.12);
+      }
+
+      .tower-item:first-of-type {
+        border-top: 0;
+      }
+
+      .tower-item img {
+        width: 4.25rem;
+        height: 4.25rem;
+        object-fit: contain;
+        background: rgba(0, 0, 0, 0.35);
+      }
+
+      .tower-item h4 {
+        margin: 0 0 0.25rem;
+        font-family: var(--font-display);
+        font-size: 0.98rem;
+        letter-spacing: -0.015em;
+      }
+
+      .tower-item .meta {
+        margin: 0 0 0.3rem;
+        color: var(--amber);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .tower-item p {
+        margin: 0;
+        color: var(--ink-muted);
+        font-size: 0.86rem;
+        line-height: 1.45;
+      }
+
+      .stats {
+        width: 100%;
+        margin: 0.45rem 0 0.5rem;
+        border-collapse: collapse;
+        font-size: 0.72rem;
+        line-height: 1.25;
+      }
+
+      .stats th,
+      .stats td {
+        padding: 0.12rem 0;
+        border-bottom: 1px solid rgba(110, 207, 154, 0.12);
+        vertical-align: top;
+      }
+
+      .stats tr:last-child th,
+      .stats tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .stats th {
+        width: 42%;
+        padding-right: 0.55rem;
+        color: var(--ink-muted);
+        font-weight: 600;
+        text-align: left;
+      }
+
+      .stats td {
+        color: var(--ink);
+        font-weight: 650;
+        text-align: left;
+      }
+
+      .enemy-card .stats {
+        margin-top: 0.55rem;
+        text-align: left;
+      }
+
+      .enemy-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+        gap: 0.85rem;
+      }
+
+      .enemy-card {
+        margin: 0;
+        padding: 0.65rem 0.65rem 0.85rem;
+        border: 1px solid var(--line);
+        background: rgba(10, 26, 22, 0.88);
+        text-align: center;
+      }
+
+      .enemy-card img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        background: #e9e6df;
+        margin: 0 0 0.65rem;
+      }
+
+      .enemy-card h3 {
+        margin: 0 0 0.3rem;
+        font-family: var(--font-display);
+        font-size: 1rem;
+      }
+
+      .enemy-card .meta {
+        margin: 0 0 0.35rem;
+        color: var(--amber);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .enemy-card p {
+        margin: 0;
+        color: var(--ink-muted);
+        font-size: 0.84rem;
+        text-align: left;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+
+      .gallery figure {
+        margin: 0;
+        border: 1px solid var(--line);
+        background: #000;
+        overflow: hidden;
+      }
+
+      .gallery img {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+      }
+
+      .gallery figcaption {
+        padding: 0.7rem 0.85rem;
+        color: var(--ink-muted);
+        font-size: 0.88rem;
+        background: rgba(8, 20, 17, 0.92);
+      }
+
+      @media (max-width: 70rem) {
+        .tower-columns {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 40rem) {
+        .tower-columns,
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-brand" href="/">Curious Engineer Studio</a>
+      <div class="nav-links">
+        <a href="/MachineBloom/">Machine Bloom</a>
+        <a href="/MachineBloom/the-world/">
+          <span data-lang="en">The World</span>
+          <span data-lang="sv" hidden>Världen</span>
+        </a>
+        <a href="/MachineBloom/playtest/">
+          <span data-lang="en">Playtest</span>
+          <span data-lang="sv" hidden>Speltest</span>
+        </a>
+        <a href="/MachineBloom/privacy/">Privacy</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="?lang=en" data-set-lang="en" aria-pressed="true">EN</a>
+          <a href="?lang=sv" data-set-lang="sv" aria-pressed="false">SV</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="world">
+      <p class="eyebrow fade-up">Machine Bloom</p>
+      <h1 class="fade-up fade-up-delay" data-lang="en">The World</h1>
+      <h1 class="fade-up fade-up-delay" data-lang="sv" hidden>Världen</h1>
+      <p class="lede fade-up fade-up-delay-2" data-lang="en">
+        Three weapon families, support boosters that share footprint edges, and machines that punish the wrong answer.
+      </p>
+      <p class="lede fade-up fade-up-delay-2" data-lang="sv" hidden>
+        Tre vapenfamiljer, stödtorn som delar footprint-kanter, och maskiner som straffar fel svar.
+      </p>
+
+      <section class="world-section" id="towers">
+        <h2 data-lang="en">Towers</h2>
+        <h2 data-lang="sv" hidden>Torn</h2>
+        <p class="section-lede" data-lang="en">
+          Each combat column starts with a base tower and two upgrade branches. Support towers buff neighbors through
+          shared edges.
+        </p>
+        <p class="section-lede" data-lang="sv" hidden>
+          Varje stridskolumn börjar med ett bastorn och två uppgraderingsgrenar. Stödtorn buffar grannar via delade
+          kanter.
+        </p>
+
+        <div class="tower-columns">
+          <section class="tower-col">
+            <header class="tower-col-head">
+              <h3>Laser</h3>
+              <p data-lang="en">Direct fire · needs line of sight</p>
+              <p data-lang="sv" hidden>Direkteld · behöver siktlinje</p>
+            </header>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/laser.png" alt="" width="133" height="189" />
+              <div>
+                <h4>Laser Cannon</h4>
+                <p class="meta" data-lang="en">Base</p>
+                <p class="meta" data-lang="sv" hidden>Bas</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Cost</span><span data-lang="sv" hidden>Kostnad</span></th>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>1.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>2.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Fast shots at the furthest visible enemy in range.</p>
+                <p data-lang="sv" hidden>Snabba skott mot den synliga fiende som kommit längst.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/twin-laser.png" alt="" width="133" height="189" />
+              <div>
+                <h4>Twin Laser Cannon</h4>
+                <p class="meta" data-lang="en">Upgrade · 30</p>
+                <p class="meta" data-lang="sv" hidden>Uppgradering · 30</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>1.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td><span data-lang="en">4 total</span><span data-lang="sv" hidden>4 totalt</span></td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>2.0</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Guns</span><span data-lang="sv" hidden>Vapen</span></th>
+                      <td><span data-lang="en">2 guns</span><span data-lang="sv" hidden>2 vapen</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Split-fire branch using two gun positions when the footprint allows.</p>
+                <p data-lang="sv" hidden>Dubbeleld med två vapenpositioner när footprinten tillåter.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/crystal-laser.png" alt="" width="133" height="103" />
+              <div>
+                <h4>Crystal Laser Cannon</h4>
+                <p class="meta" data-lang="en">Upgrade · 30</p>
+                <p class="meta" data-lang="sv" hidden>Uppgradering · 30</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>1.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Own damage</span><span data-lang="sv" hidden>Egen skada</span></th>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>3.0</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Special</span><span data-lang="sv" hidden>Special</span></th>
+                      <td><span data-lang="en">Combines lasers</span><span data-lang="sv" hidden>Kombinerar lasers</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Gathers ready lasers into its crystal for one combined strike.</p>
+                <p data-lang="sv" hidden>Samlar redo lasers i kristallen till ett kombinerat slag.</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="tower-col">
+            <header class="tower-col-head">
+              <h3>Flame</h3>
+              <p data-lang="en">Short range · cone / beam</p>
+              <p data-lang="sv" hidden>Kort räckvidd · kon / stråle</p>
+            </header>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/flame.png" alt="" width="133" height="186" />
+              <div>
+                <h4>Flame Thrower</h4>
+                <p class="meta" data-lang="en">Base</p>
+                <p class="meta" data-lang="sv" hidden>Bas</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Cost</span><span data-lang="sv" hidden>Kostnad</span></th>
+                      <td>25</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>1.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td><span data-lang="en">3 total</span><span data-lang="sv" hidden>3 totalt</span></td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>1.5</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Beams</span><span data-lang="sv" hidden>Strålar</span></th>
+                      <td><span data-lang="en">10 beams · 30°</span><span data-lang="sv" hidden>10 strålar · 30°</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">A short cone of fire that stops on the first enemy or blocking building.</p>
+                <p data-lang="sv" hidden>Kort eldkon som stoppas av första fienden eller blockerande byggnad.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/cryo.png" alt="" width="133" height="171" />
+              <div>
+                <h4>Cryo Spray Tower</h4>
+                <p class="meta" data-lang="en">Upgrade · 30</p>
+                <p class="meta" data-lang="sv" hidden>Uppgradering · 30</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>1.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td><span data-lang="en">3 total</span><span data-lang="sv" hidden>3 totalt</span></td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>1.5</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Slow</span><span data-lang="sv" hidden>Saktar</span></th>
+                      <td>50% · 3s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Beams</span><span data-lang="sv" hidden>Strålar</span></th>
+                      <td><span data-lang="en">20 beams · 30°</span><span data-lang="sv" hidden>20 strålar · 30°</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Wide freezing spray that halves enemy speed for a few seconds.</p>
+                <p data-lang="sv" hidden>Brett frysspray som halverar hastigheten i några sekunder.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/volcano.png" alt="" width="133" height="158" />
+              <div>
+                <h4>Volcano Tower</h4>
+                <p class="meta" data-lang="en">Upgrade · 30</p>
+                <p class="meta" data-lang="sv" hidden>Uppgradering · 30</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>1.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>1.5</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Burn</span><span data-lang="sv" hidden>Bränn</span></th>
+                      <td>2/s · 5s</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Focused magma beam that burns every enemy along the line.</p>
+                <p data-lang="sv" hidden>Fokuserad magmastråle som bränner alla längs linjen.</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="tower-col">
+            <header class="tower-col-head">
+              <h3>Bomb</h3>
+              <p data-lang="en">Arcing blasts · ignores line of sight</p>
+              <p data-lang="sv" hidden>Bågade explosioner · ignorerar siktlinje</p>
+            </header>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/bomb.png" alt="" width="133" height="167" />
+              <div>
+                <h4>Bomb Launcher</h4>
+                <p class="meta" data-lang="en">Base</p>
+                <p class="meta" data-lang="sv" hidden>Bas</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Cost</span><span data-lang="sv" hidden>Kostnad</span></th>
+                      <td>40</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>2.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>3.0</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Blast</span><span data-lang="sv" hidden>Explosion</span></th>
+                      <td>1.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Tracking bombs in an arc with a solid explosion radius.</p>
+                <p data-lang="sv" hidden>Spårande bomber i båge med tydlig explosionsradie.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/armor-piercing.png" alt="" width="133" height="152" />
+              <div>
+                <h4>Armor Piercing Bomb</h4>
+                <p class="meta" data-lang="en">Upgrade · 30</p>
+                <p class="meta" data-lang="sv" hidden>Uppgradering · 30</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>2.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>3.0</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Blast</span><span data-lang="sv" hidden>Explosion</span></th>
+                      <td>1.0</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Special</span><span data-lang="sv" hidden>Special</span></th>
+                      <td><span data-lang="en">Halves armor</span><span data-lang="sv" hidden>Halverar pansar</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Area blasts that cut enemy armor in half on hit.</p>
+                <p data-lang="sv" hidden>Områdesexplosioner som halverar pansar vid träff.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/big-bomb.png" alt="" width="133" height="122" />
+              <div>
+                <h4>Big Bomb Tower</h4>
+                <p class="meta" data-lang="en">Upgrade · 30</p>
+                <p class="meta" data-lang="sv" hidden>Uppgradering · 30</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td>2.0s</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Damage</span><span data-lang="sv" hidden>Skada</span></th>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Range</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td>3.0</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Blast</span><span data-lang="sv" hidden>Explosion</span></th>
+                      <td>2.0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Double damage and double blast radius for packed paths.</p>
+                <p data-lang="sv" hidden>Dubbel skada och dubbel radie mot täta vägar.</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="tower-col">
+            <header class="tower-col-head">
+              <h3 data-lang="en">Upgrades</h3>
+              <h3 data-lang="sv" hidden>Stöd</h3>
+              <p data-lang="en">Support boosters · shared footprint edges</p>
+              <p data-lang="sv" hidden>Stödtorn · delade footprint-kanter</p>
+            </header>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/reload.png" alt="" width="129" height="99" />
+              <div>
+                <h4>Reload Booster</h4>
+                <p class="meta" data-lang="en">Support</p>
+                <p class="meta" data-lang="sv" hidden>Stöd</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Cost</span><span data-lang="sv" hidden>Kostnad</span></th>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Reach</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td><span data-lang="en">1.0 edge</span><span data-lang="sv" hidden>1.0 kant</span></td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Reload</span><span data-lang="sv" hidden>Omladdning</span></th>
+                      <td><span data-lang="en">×0.8 / edge</span><span data-lang="sv" hidden>×0.8 / kant</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Connected combat towers fire more often.</p>
+                <p data-lang="sv" hidden>Anslutna stridstorn skjuter oftare.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/range.png" alt="" width="134" height="102" />
+              <div>
+                <h4>Range Booster</h4>
+                <p class="meta" data-lang="en">Support</p>
+                <p class="meta" data-lang="sv" hidden>Stöd</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Cost</span><span data-lang="sv" hidden>Kostnad</span></th>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Reach</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td><span data-lang="en">1.0 edge</span><span data-lang="sv" hidden>1.0 kant</span></td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Effect</span><span data-lang="sv" hidden>Effekt</span></th>
+                      <td><span data-lang="en">+1.0 range / edge</span><span data-lang="sv" hidden>+1.0 räckvidd / kant</span></td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Flame bonus</span><span data-lang="sv" hidden>Flame-bonus</span></th>
+                      <td><span data-lang="en">+0.5 to Flame</span><span data-lang="sv" hidden>+0.5 till Flame</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Extends neighboring range — vital on awkward maps.</p>
+                <p data-lang="sv" hidden>Ökar grannars räckvidd — avgörande på knepiga kartor.</p>
+              </div>
+            </article>
+            <article class="tower-item">
+              <img src="/assets/machinebloom/world/towers/damage.png" alt="" width="134" height="101" />
+              <div>
+                <h4>Damage Booster</h4>
+                <p class="meta" data-lang="en">Support</p>
+                <p class="meta" data-lang="sv" hidden>Stöd</p>
+                <table class="stats">
+                  <tbody>
+                    <tr>
+                      <th><span data-lang="en">Cost</span><span data-lang="sv" hidden>Kostnad</span></th>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Reach</span><span data-lang="sv" hidden>Räckvidd</span></th>
+                      <td><span data-lang="en">1.0 edge</span><span data-lang="sv" hidden>1.0 kant</span></td>
+                    </tr>
+                    <tr>
+                      <th><span data-lang="en">Effect</span><span data-lang="sv" hidden>Effekt</span></th>
+                      <td><span data-lang="en">+1 damage / edge</span><span data-lang="sv" hidden>+1 skada / kant</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p data-lang="en">Adds damage through every shared edge.</p>
+                <p data-lang="sv" hidden>Ger extra skada via varje delad kant.</p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <section class="world-section" id="machines">
+        <h2 data-lang="en">Machines</h2>
+        <h2 data-lang="sv" hidden>Maskiner</h2>
+        <p class="section-lede" data-lang="en">
+          From scouts to shielded tanks — each machine asks for a different layout.
+        </p>
+        <p class="section-lede" data-lang="sv" hidden>
+          Från scouts till sköldade tanks — varje maskin kräver en annan layout.
+        </p>
+        <div class="enemy-grid">
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/miner.png" alt="Miner" width="280" height="240" />
+            <p class="meta" data-lang="en">Balanced</p>
+            <p class="meta" data-lang="sv" hidden>Balanserad</p>
+            <h3>Miner</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>1.0</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">2+2/wave</span><span data-lang="sv" hidden>2+2/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Standard machine with balanced speed and health.</p>
+            <p data-lang="sv" hidden>Standardmaskin med balanserad hastighet och hälsa.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/courier.png" alt="Courier" width="280" height="240" />
+            <p class="meta" data-lang="en">Fast</p>
+            <p class="meta" data-lang="sv" hidden>Snabb</p>
+            <h3>Courier</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>2.5</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">1+1/wave</span><span data-lang="sv" hidden>1+1/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Quick units that punish slow coverage.</p>
+            <p data-lang="sv" hidden>Snabba enheter som straffar långsam täckning.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/hauler.png" alt="Hauler" width="280" height="240" />
+            <p class="meta" data-lang="en">Tank</p>
+            <p class="meta" data-lang="sv" hidden>Tank</p>
+            <h3>Hauler</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.5</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">10+10/wave</span><span data-lang="sv" hidden>10+10/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Slow and durable — a damage check for your network.</p>
+            <p data-lang="sv" hidden>Långsam och tålig — ett skadetest för nätverket.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/scout.png" alt="Scout" width="280" height="240" />
+            <p class="meta" data-lang="en">Very fast</p>
+            <p class="meta" data-lang="sv" hidden>Mycket snabb</p>
+            <h3>Scout</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>5.0</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">1+1/wave</span><span data-lang="sv" hidden>1+1/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Extremely fast leaks unless coverage is wide and early.</p>
+            <p data-lang="sv" hidden>Extremt snabba läckor utan tidigt och brett försvar.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/mirror.png" alt="Mirror" width="280" height="275" />
+            <p class="meta" data-lang="en">Shield · Laser</p>
+            <p class="meta" data-lang="sv" hidden>Sköld · Laser</p>
+            <h3>Mirror</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.9</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">4+3/wave</span><span data-lang="sv" hidden>4+3/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Wrong weapons</span><span data-lang="sv" hidden>Fel vapen</span></th>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Breaks with</span><span data-lang="sv" hidden>Bryts med</span></th>
+                  <td>Laser</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Laser-colored shield — break it with Laser weapons.</p>
+            <p data-lang="sv" hidden>Laserfärgad sköld — bryt den med Laser-vapen.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/kiln.png" alt="Kiln" width="280" height="275" />
+            <p class="meta" data-lang="en">Shield · Flame</p>
+            <p class="meta" data-lang="sv" hidden>Sköld · Flame</p>
+            <h3>Kiln</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.9</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">4+3/wave</span><span data-lang="sv" hidden>4+3/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Wrong weapons</span><span data-lang="sv" hidden>Fel vapen</span></th>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Breaks with</span><span data-lang="sv" hidden>Bryts med</span></th>
+                  <td>Flame</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Flame-colored shield — break it with Flame weapons.</p>
+            <p data-lang="sv" hidden>Flame-färgad sköld — bryt den med Flame-vapen.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/blaster.png" alt="Blaster" width="280" height="275" />
+            <p class="meta" data-lang="en">Shield · Bomb</p>
+            <p class="meta" data-lang="sv" hidden>Sköld · Bomb</p>
+            <h3>Blaster</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.9</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">4+3/wave</span><span data-lang="sv" hidden>4+3/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Wrong weapons</span><span data-lang="sv" hidden>Fel vapen</span></th>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Breaks with</span><span data-lang="sv" hidden>Bryts med</span></th>
+                  <td>Bomb</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Bomb-colored shield — break it with Bomb weapons.</p>
+            <p data-lang="sv" hidden>Bomb-färgad sköld — bryt den med Bomb-vapen.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/foundry.png" alt="Foundry" width="280" height="275" />
+            <p class="meta">Boss</p>
+            <h3>Foundry</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.5</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td>450</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Shields</span><span data-lang="sv" hidden>Sköldar</span></th>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Summons</span><span data-lang="sv" hidden>Kallar hjälp</span></th>
+                  <td><span data-lang="en">every 5s</span><span data-lang="sv" hidden>var 5s</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">All three shields plus armor. Match each color, then finish it — it summons help.</p>
+            <p data-lang="sv" hidden>Alla tre sköldar plus pansar. Matcha varje färg, sedan ner den — den kallar hjälp.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/digger.png" alt="Digger" width="280" height="230" />
+            <p class="meta" data-lang="en">Armor · weak</p>
+            <p class="meta" data-lang="sv" hidden>Pansar · weak</p>
+            <h3>Digger</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.85</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">5+3/wave</span><span data-lang="sv" hidden>5+3/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>3</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Light armor subtracts from every hit.</p>
+            <p data-lang="sv" hidden>Lätt pansar drar av från varje träff.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/crusher.png" alt="Crusher" width="280" height="230" />
+            <p class="meta" data-lang="en">Armor · tough</p>
+            <p class="meta" data-lang="sv" hidden>Pansar · tough</p>
+            <h3>Crusher</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.7</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">9+5/wave</span><span data-lang="sv" hidden>9+5/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Medium armor — prefer strong per-hit damage.</p>
+            <p data-lang="sv" hidden>Medelpansar — föredra stark skada per skott.</p>
+          </article>
+          <article class="enemy-card">
+            <img src="/assets/machinebloom/world/enemies/extractor.png" alt="Extractor" width="280" height="230" />
+            <p class="meta" data-lang="en">Armor · heavy</p>
+            <p class="meta" data-lang="sv" hidden>Pansar · heavy</p>
+            <h3>Extractor</h3>
+            <table class="stats">
+              <tbody>
+                <tr>
+                  <th><span data-lang="en">Speed</span><span data-lang="sv" hidden>Hastighet</span></th>
+                  <td>0.55</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">HP</span><span data-lang="sv" hidden>HP</span></th>
+                  <td><span data-lang="en">14+8/wave</span><span data-lang="sv" hidden>14+8/våg</span></td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Armor</span><span data-lang="sv" hidden>Pansar</span></th>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th><span data-lang="en">Credits</span><span data-lang="sv" hidden>Credits</span></th>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
+            <p data-lang="en">Heavy armor that shrugs off small hits.</p>
+            <p data-lang="sv" hidden>Tungt pansar som skakar av små träffar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="world-section" id="atmosphere">
+        <h2 data-lang="en">Atmosphere</h2>
+        <h2 data-lang="sv" hidden>Stämning</h2>
+        <p class="section-lede" data-lang="en">Concept art from the restoration sites.</p>
+        <p class="section-lede" data-lang="sv" hidden>Konceptbilder från återställningsplatserna.</p>
+        <div class="gallery">
+          <figure>
+            <img src="/assets/machinebloom/world/atmosphere/concept_landscape.png" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption data-lang="en">Reclaimed landscape</figcaption>
+            <figcaption data-lang="sv" hidden>Återtaget landskap</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/machinebloom/world/atmosphere/concept_landscape_robots.png" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption data-lang="en">Machines in the ruins</figcaption>
+            <figcaption data-lang="sv" hidden>Maskiner i ruinerna</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/machinebloom/world/atmosphere/concept_robot_factory.png" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption data-lang="en">Robot factory</figcaption>
+            <figcaption data-lang="sv" hidden>Robotfabrik</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/machinebloom/world/atmosphere/concept_with_laser.png" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption data-lang="en">Laser defense</figcaption>
+            <figcaption data-lang="sv" hidden>Laserförsvar</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/machinebloom/world/atmosphere/concept_flame.png" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption data-lang="en">Flame line</figcaption>
+            <figcaption data-lang="sv" hidden>Eldlinje</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/machinebloom/world/atmosphere/concept_booster.png" alt="" width="1920" height="1080" loading="lazy" />
+            <figcaption data-lang="en">Booster network</figcaption>
+            <figcaption data-lang="sv" hidden>Boosternät</figcaption>
+          </figure>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-ghost" href="/MachineBloom/">
+            <span data-lang="en">Back to Machine Bloom</span>
+            <span data-lang="sv" hidden>Tillbaka till Machine Bloom</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Machine Bloom ·
+        <a href="/MachineBloom/">Curious Engineer Studio</a> ·
+        <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
+      </p>
+    </footer>
+    <script src="/i18n.js?v=2"></script>
+  </body>
+</html>

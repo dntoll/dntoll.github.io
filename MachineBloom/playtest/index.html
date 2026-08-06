@@ -23,7 +23,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles.css?v=2" />
     <style>
       .playtest {
         width: min(100% - 2.5rem, 42rem);
@@ -95,14 +95,18 @@
       <a class="nav-brand" href="/">Curious Engineer Studio</a>
       <div class="nav-links">
         <a href="/MachineBloom/">Machine Bloom</a>
+        <a href="/MachineBloom/the-world/">
+          <span data-lang="en" hidden>The World</span>
+          <span data-lang="sv">Världen</span>
+        </a>
         <a href="/MachineBloom/playtest/">
           <span data-lang="en" hidden>Playtest</span>
           <span data-lang="sv">Speltest</span>
         </a>
         <a href="/MachineBloom/privacy/">Privacy</a>
         <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-          <button type="button" data-set-lang="sv" aria-pressed="true">SV</button>
+          <a href="?lang=en" data-set-lang="en" aria-pressed="false">EN</a>
+          <a href="?lang=sv" data-set-lang="sv" aria-pressed="true">SV</a>
         </div>
       </div>
     </nav>
@@ -191,6 +195,27 @@
           <a href="https://play.google.com/googleplaygames/">play.google.com/googleplaygames</a>.
         </p>
       </section>
+
+      <section class="panel">
+        <h2 data-lang="sv">Testa köp av Full Campaign</h2>
+        <h2 data-lang="en" hidden>Test the Full Campaign purchase</h2>
+        <p data-lang="sv">
+          Du har tillgång till Googles <strong style="color: var(--ink)">testkort</strong> och kan låsa upp
+          <strong style="color: var(--ink)">FULL CAMPAIGN</strong> utan att debiteras. Upplåsningen ska finnas kvar
+          efter att det stängda testet är slut. Steg-för-steg med skärmbilder:
+        </p>
+        <p data-lang="en" hidden>
+          You have access to Google’s <strong style="color: var(--ink)">test cards</strong> and can unlock
+          <strong style="color: var(--ink)">FULL CAMPAIGN</strong> without being charged. The unlock should remain
+          after the closed test ends. Step-by-step with screenshots:
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/MachineBloom/playtest/buy/">
+            <span data-lang="sv">Visa köpguiden</span>
+            <span data-lang="en" hidden>Open purchase guide</span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -203,6 +228,6 @@
         <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
       </p>
     </footer>
-    <script src="/i18n.js"></script>
+    <script src="/i18n.js?v=2"></script>
   </body>
 </html>
