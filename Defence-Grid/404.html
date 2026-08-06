@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machine Bloom - Tower Defence</title>
+    <script>
+      const segments = window.location.pathname.split('/').filter(Boolean)
+      const deployment = segments[1]
+      const isDeployment = deployment === 'test' || deployment === 'release' || /^\d+\.\d+\.\d+$/.test(deployment)
+
+      if (segments[0] === 'Defence-Grid' && isDeployment) {
+        const base = `/${segments[0]}/${deployment}/`
+        const route = `${window.location.pathname}${window.location.search}${window.location.hash}`
+        window.location.replace(`${base}?dg-route=${encodeURIComponent(route)}`)
+      }
+    </script>
+  </head>
+  <body>
+    <p>Sidan kunde inte hittas.</p>
+  </body>
+</html>

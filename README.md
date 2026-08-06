@@ -1,28 +1,18 @@
-# Croquis timer
+# Curious Engineer Studio
 
-An easy to use timer
+Publik webbplats för [curiousengineerstudio.se](https://curiousengineerstudio.se/).
 
-## TO DO
+## Sidor
 
- * Add five seconds between poses with countdown, this needs to be before any pose but not before rests
- * Let the user pause and restart on SPACE-bar presses
- * Let the user change the schedule through the browser
- * PoseTitle should not be poses
+- `/` — företagslandning
+- `/MachineBloom/` — spelsida
+- `/MachineBloom/privacy/` — integritetspolicy
+- `/MachineBloom/playtest/` — information om stängt Google Play-test
+- `/Defence-Grid/privacy/` — permanent redirect till Machine Bloom privacy
+- `/Defence-Grid/test/` och `/Defence-Grid/release/` — publiceras av Defence-Grid CI (hemliga webbtester)
 
+## Hosting
 
+GitHub Pages från den här repots `main`-branch. Custom domain via `CNAME`.
 
-## to push
-```console
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/github
-```
-
-# to run locally 
-
-```console
-  npm run dev
-```
-
-
-##  public URL
-[https://dntoll.github.io/public/](https://dntoll.github.io/public/)
+Vite-webbappen byggs i `Defence-Grid` och pushas hit under `Defence-Grid/test/` respektive `Defence-Grid/release/`.

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stängt speltest för Machine Bloom på Google Play. Information för inbjudna testare."
+    />
+    <title>Stängt speltest | Machine Bloom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .playtest {
+        width: min(100% - 2.5rem, 42rem);
+        margin: 0 auto;
+        padding: 7.5rem 0 4rem;
+      }
+
+      .playtest .eyebrow {
+        margin: 0 0 0.75rem;
+        color: var(--bloom);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .playtest h1 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: clamp(2.2rem, 6vw, 3.4rem);
+        letter-spacing: -0.04em;
+        line-height: 1.05;
+      }
+
+      .playtest .lede {
+        margin: 1.1rem 0 0;
+        color: var(--ink-muted);
+        font-size: 1.08rem;
+      }
+
+      .panel {
+        margin-top: 2rem;
+        padding: 1.35rem 1.4rem;
+        border: 1px solid var(--line);
+        background:
+          radial-gradient(circle at 0% 0%, var(--bloom-soft), transparent 55%),
+          rgba(10, 26, 22, 0.85);
+      }
+
+      .panel h2 {
+        margin: 0 0 0.7rem;
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        letter-spacing: -0.02em;
+      }
+
+      .panel p,
+      .panel li {
+        color: var(--ink-muted);
+      }
+
+      .panel ul {
+        margin: 0.75rem 0 0;
+        padding-left: 1.15rem;
+      }
+
+      .panel li + li {
+        margin-top: 0.45rem;
+      }
+
+      .panel + .panel {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Huvudnavigation">
+      <a class="nav-brand" href="/">Curious Engineer Studio</a>
+      <div class="nav-links">
+        <a href="/MachineBloom/">Machine Bloom</a>
+        <a href="/MachineBloom/playtest/">Speltest</a>
+        <a href="/MachineBloom/privacy/">Privacy</a>
+      </div>
+    </nav>
+
+    <main class="playtest">
+      <p class="eyebrow fade-up">Machine Bloom</p>
+      <h1 class="fade-up fade-up-delay">Stängt speltest på Google Play</h1>
+      <p class="lede fade-up fade-up-delay-2">
+        Vi kör just nu ett stängt speltest via play.google.com. Din feedback och att du behåller appen installerad
+        hjälper spelet vidare mot en bredare release.
+      </p>
+
+      <section class="panel fade-up fade-up-delay-2">
+        <h2>Varför det är viktigt</h2>
+        <p>
+          Google Play kräver att ett stängt test pågår under en längre period innan spelet kan gå vidare. Därför behöver
+          testare helst <strong style="color: var(--ink)">behålla appen installerad</strong> tills jag säger till att
+          testet är klart — även mellan spelsessionerna.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Så deltar du</h2>
+        <ul>
+          <li>Du behöver bli inlagd med din <strong style="color: var(--ink)">Gmail</strong> (Google-konto) för att få tillgång.</li>
+          <li>
+            Kontakta mig på
+            <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
+            eller via DM om du känner mig, så lägger jag till dig.
+          </li>
+          <li>När du är tillagd: öppna testlänken, tacka ja/opt-in, och installera bygget från Play.</li>
+        </ul>
+        <div class="cta-row">
+          <a
+            class="btn btn-primary"
+            href="https://play.google.com/apps/testing/se.curiousengineerstudio.machinebloom"
+            >Öppna stängt test</a
+          >
+          <a
+            class="btn btn-ghost"
+            href="https://play.google.com/store/apps/details?id=se.curiousengineerstudio.machinebloom"
+            >Android på Google Play</a
+          >
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Google Play Games for PC</h2>
+        <p>
+          Spelet kan också testas på PC via Google Play Games. Läs mer och hämta klienten här:
+          <a href="https://play.google.com/googleplaygames/">play.google.com/googleplaygames</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <a href="/MachineBloom/">Tillbaka till Machine Bloom</a> ·
+        <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
+      </p>
+    </footer>
+  </body>
+</html>

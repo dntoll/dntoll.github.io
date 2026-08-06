@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Curious Engineer Studio — indie-spelstudio bakom Machine Bloom: Tower Defense."
+    />
+    <title>Curious Engineer Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: grid;
+        align-items: end;
+        overflow: hidden;
+        isolation: isolate;
+      }
+
+      .hero-media {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+      }
+
+      .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 35%;
+        transform: scale(1.06);
+        animation: slowZoom 18s var(--ease) forwards;
+      }
+
+      @keyframes slowZoom {
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .hero-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(6, 18, 16, 0.35) 0%, rgba(6, 18, 16, 0.55) 42%, rgba(6, 18, 16, 0.94) 100%),
+          radial-gradient(ellipse at 70% 20%, rgba(110, 207, 154, 0.18), transparent 45%);
+      }
+
+      .hero-content {
+        width: min(100% - 2.5rem, 68rem);
+        margin: 0 auto;
+        padding: 7rem 0 3.5rem;
+      }
+
+      .brand {
+        margin: 0;
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: clamp(2.8rem, 9vw, 5.8rem);
+        line-height: 0.92;
+        letter-spacing: -0.055em;
+        max-width: 14ch;
+      }
+
+      .tagline {
+        margin: 1.25rem 0 0;
+        max-width: 28rem;
+        color: var(--ink-muted);
+        font-size: clamp(1.05rem, 2.2vw, 1.2rem);
+      }
+
+      .game-card {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.15rem 1.35rem;
+        align-items: center;
+        width: min(100%, 34rem);
+        padding: 1.15rem 1.25rem;
+        background: var(--bg-panel);
+        border: 1px solid var(--line);
+        backdrop-filter: blur(10px);
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.3s ease, transform 0.4s var(--ease), background 0.3s ease;
+      }
+
+      .game-card:hover {
+        border-color: rgba(110, 207, 154, 0.55);
+        background: rgba(14, 40, 34, 0.88);
+        transform: translateY(-3px);
+        color: inherit;
+      }
+
+      .game-card img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 0.85rem;
+      }
+
+      .game-card h2 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        letter-spacing: -0.02em;
+      }
+
+      .game-card p {
+        margin: 0.3rem 0 0;
+        color: var(--ink-muted);
+        font-size: 0.95rem;
+      }
+
+      .game-card .go {
+        grid-column: 1 / -1;
+        color: var(--bloom);
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="/assets/machinebloom/screenshot-02.png"
+          alt=""
+          width="1920"
+          height="1080"
+        />
+      </div>
+      <nav class="site-nav" aria-label="Huvudnavigation">
+        <a class="nav-brand" href="/">Curious Engineer Studio</a>
+        <div class="nav-links">
+          <a href="/MachineBloom/">Machine Bloom</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <h1 class="brand fade-up">Curious Engineer Studio</h1>
+        <p class="tagline fade-up fade-up-delay">
+          Indie-spelstudio i Sverige. Vi bygger taktiskt tornförsvar där naturen tar tillbaka världen.
+        </p>
+        <a class="game-card fade-up fade-up-delay-2" href="/MachineBloom/">
+          <img
+            src="/assets/machinebloom/icon-512.png"
+            alt=""
+            width="512"
+            height="512"
+          />
+          <div>
+            <h2>Machine Bloom: Tower Defense</h2>
+            <p>Återställ en ödelagd värld med former, torn och taktik.</p>
+          </div>
+          <span class="go">Till spelet →</span>
+        </a>
+      </div>
+    </header>
+    <footer class="site-footer">
+      <p>
+        © Curious Engineer Studio ·
+        <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
+      </p>
+    </footer>
+  </body>
+</html>

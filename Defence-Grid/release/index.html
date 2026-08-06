@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <title>Machine Bloom - Tower Defence</title>
+    <link rel="icon" type="image/png" href="/Defence-Grid/release/favicon.png" />
+    <script type="module" crossorigin src="/Defence-Grid/release/assets/index-DFHR4Uhs.js"></script>
+    <link rel="stylesheet" crossorigin href="/Defence-Grid/release/assets/index-BndTMY_3.css">
+  </head>
+  <body>
+    <div id="startup-loading" class="loading-screen" data-state="loading" aria-busy="true" aria-live="polite">
+      <div class="loading-screen-frame">
+        <img class="loading-screen-art" src="/Defence-Grid/release/startup/load_screen.jpg" alt="" decoding="async" />
+        <img class="loading-screen-title" src="/Defence-Grid/release/startup/title.png" alt="" decoding="async" />
+        <div class="loading-screen-progress" role="progressbar" aria-label="Loading" aria-busy="true" aria-valuetext="Loading">
+          <div class="loading-screen-progress-indicator"></div>
+        </div>
+        <button class="loading-screen-proceed" type="button" disabled aria-disabled="true">Click to proceed</button>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script>
+      const redirectedRoute = new URLSearchParams(window.location.search).get('dg-route')
+      if (redirectedRoute?.startsWith('/')) {
+        window.history.replaceState(null, '', redirectedRoute)
+      }
+    </script>
+  </body>
+</html>
