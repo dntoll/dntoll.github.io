@@ -1,13 +1,22 @@
 <!doctype html>
-<html lang="sv">
+<html lang="sv" data-default-lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
+      data-i18n-meta="content"
+      data-i18n-en="Closed playtest for Machine Bloom on Google Play. Info for invited testers."
+      data-i18n-sv="Stängt speltest för Machine Bloom på Google Play. Information för inbjudna testare."
       content="Stängt speltest för Machine Bloom på Google Play. Information för inbjudna testare."
     />
-    <title>Stängt speltest | Machine Bloom</title>
+    <title
+      data-i18n-meta="text"
+      data-i18n-en="Closed playtest | Machine Bloom"
+      data-i18n-sv="Stängt speltest | Machine Bloom"
+    >
+      Stängt speltest | Machine Bloom
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -82,36 +91,58 @@
     </style>
   </head>
   <body>
-    <nav class="site-nav" aria-label="Huvudnavigation">
+    <nav class="site-nav" aria-label="Main navigation">
       <a class="nav-brand" href="/">Curious Engineer Studio</a>
       <div class="nav-links">
         <a href="/MachineBloom/">Machine Bloom</a>
-        <a href="/MachineBloom/playtest/">Speltest</a>
+        <a href="/MachineBloom/playtest/">
+          <span data-lang="en" hidden>Playtest</span>
+          <span data-lang="sv">Speltest</span>
+        </a>
         <a href="/MachineBloom/privacy/">Privacy</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-set-lang="sv" aria-pressed="true">SV</button>
+        </div>
       </div>
     </nav>
 
     <main class="playtest">
       <p class="eyebrow fade-up">Machine Bloom</p>
-      <h1 class="fade-up fade-up-delay">Stängt speltest på Google Play</h1>
-      <p class="lede fade-up fade-up-delay-2">
+      <h1 class="fade-up fade-up-delay" data-lang="sv">Stängt speltest på Google Play</h1>
+      <h1 class="fade-up fade-up-delay" data-lang="en" hidden>Closed Google Play playtest</h1>
+      <p class="lede fade-up fade-up-delay-2" data-lang="sv">
         Vi kör just nu ett stängt speltest via play.google.com. Din feedback och att du behåller appen installerad
         hjälper spelet vidare mot en bredare release.
       </p>
+      <p class="lede fade-up fade-up-delay-2" data-lang="en" hidden>
+        We are running a closed playtest through play.google.com. Your feedback — and keeping the app installed —
+        helps the game move toward a wider release.
+      </p>
 
       <section class="panel fade-up fade-up-delay-2">
-        <h2>Varför det är viktigt</h2>
-        <p>
+        <h2 data-lang="sv">Varför det är viktigt</h2>
+        <h2 data-lang="en" hidden>Why it matters</h2>
+        <p data-lang="sv">
           Google Play kräver att ett stängt test pågår under en längre period innan spelet kan gå vidare. Därför behöver
           testare helst <strong style="color: var(--ink)">behålla appen installerad</strong> tills jag säger till att
           testet är klart — även mellan spelsessionerna.
         </p>
+        <p data-lang="en" hidden>
+          Google Play requires a closed test to run for an extended period before the game can move forward. Please
+          <strong style="color: var(--ink)">keep the app installed</strong> until I say the test is finished — even
+          between play sessions.
+        </p>
       </section>
 
       <section class="panel">
-        <h2>Så deltar du</h2>
-        <ul>
-          <li>Du behöver bli inlagd med din <strong style="color: var(--ink)">Gmail</strong> (Google-konto) för att få tillgång.</li>
+        <h2 data-lang="sv">Så deltar du</h2>
+        <h2 data-lang="en" hidden>How to join</h2>
+        <ul data-lang="sv">
+          <li>
+            Du behöver bli inlagd med din <strong style="color: var(--ink)">Gmail</strong> (Google-konto) för att få
+            tillgång.
+          </li>
           <li>
             Kontakta mig på
             <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
@@ -119,24 +150,44 @@
           </li>
           <li>När du är tillagd: öppna testlänken, tacka ja/opt-in, och installera bygget från Play.</li>
         </ul>
+        <ul data-lang="en" hidden>
+          <li>
+            You need to be added with your <strong style="color: var(--ink)">Gmail</strong> (Google account) to get
+            access.
+          </li>
+          <li>
+            Contact me at
+            <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
+            or DM me if you know me, and I will add you.
+          </li>
+          <li>Once added: open the test link, opt in, and install the build from Play.</li>
+        </ul>
         <div class="cta-row">
           <a
             class="btn btn-primary"
             href="https://play.google.com/apps/testing/se.curiousengineerstudio.machinebloom"
-            >Öppna stängt test</a
           >
+            <span data-lang="sv">Öppna stängt test</span>
+            <span data-lang="en" hidden>Open closed test</span>
+          </a>
           <a
             class="btn btn-ghost"
             href="https://play.google.com/store/apps/details?id=se.curiousengineerstudio.machinebloom"
-            >Android på Google Play</a
           >
+            <span data-lang="sv">Android på Google Play</span>
+            <span data-lang="en" hidden>Android on Google Play</span>
+          </a>
         </div>
       </section>
 
       <section class="panel">
         <h2>Google Play Games for PC</h2>
-        <p>
+        <p data-lang="sv">
           Spelet kan också testas på PC via Google Play Games. Läs mer och hämta klienten här:
+          <a href="https://play.google.com/googleplaygames/">play.google.com/googleplaygames</a>.
+        </p>
+        <p data-lang="en" hidden>
+          You can also test the game on PC with Google Play Games. Learn more and get the client here:
           <a href="https://play.google.com/googleplaygames/">play.google.com/googleplaygames</a>.
         </p>
       </section>
@@ -144,9 +195,14 @@
 
     <footer class="site-footer">
       <p>
-        <a href="/MachineBloom/">Tillbaka till Machine Bloom</a> ·
+        <a href="/MachineBloom/">
+          <span data-lang="sv">Tillbaka till Machine Bloom</span>
+          <span data-lang="en" hidden>Back to Machine Bloom</span>
+        </a>
+        ·
         <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
       </p>
     </footer>
+    <script src="/i18n.js"></script>
   </body>
 </html>

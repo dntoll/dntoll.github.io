@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="sv">
+<html lang="en" data-default-lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Machine Bloom: Tower Defense — taktiskt tornförsvar där varje placering är ett spatialt pussel. Av Curious Engineer Studio."
+      data-i18n-meta="content"
+      data-i18n-en="Machine Bloom: Tower Defense — tactical tower defense where every placement is a spatial puzzle. By Curious Engineer Studio."
+      data-i18n-sv="Machine Bloom: Tower Defense — taktiskt tornförsvar där varje placering är ett spatialt pussel. Av Curious Engineer Studio."
+      content="Machine Bloom: Tower Defense — tactical tower defense where every placement is a spatial puzzle. By Curious Engineer Studio."
     />
     <title>Machine Bloom: Tower Defense | Curious Engineer Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -179,12 +182,19 @@
     </style>
   </head>
   <body>
-    <nav class="site-nav" aria-label="Huvudnavigation">
+    <nav class="site-nav" aria-label="Main navigation">
       <a class="nav-brand" href="/">Curious Engineer Studio</a>
       <div class="nav-links">
         <a href="/MachineBloom/">Machine Bloom</a>
-        <a href="/MachineBloom/playtest/">Speltest</a>
+        <a href="/MachineBloom/playtest/">
+          <span data-lang="en">Playtest</span>
+          <span data-lang="sv" hidden>Speltest</span>
+        </a>
         <a href="/MachineBloom/privacy/">Privacy</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-set-lang="sv" aria-pressed="false">SV</button>
+        </div>
       </div>
     </nav>
 
@@ -198,7 +208,10 @@
           <img src="/assets/machinebloom/icon-512.png" alt="" width="512" height="512" />
           <h1>Machine Bloom: Tower Defense</h1>
         </div>
-        <p class="intro fade-up fade-up-delay-2">
+        <p class="intro fade-up fade-up-delay-2" data-lang="en">
+          Machines have consumed the world. Build a defense network, break their advance, and let nature bloom again.
+        </p>
+        <p class="intro fade-up fade-up-delay-2" data-lang="sv" hidden>
           Maskinerna har slukat världen. Bygg ett försvarsnät, stoppa deras framryckning och låt naturen blomma igen.
         </p>
         <div class="cta-row fade-up fade-up-delay-2">
@@ -207,24 +220,49 @@
             href="https://play.google.com/store/apps/details?id=se.curiousengineerstudio.machinebloom"
             >Google Play</a
           >
-          <a class="btn btn-ghost" href="/MachineBloom/playtest/">Stängt speltest</a>
+          <a class="btn btn-ghost" href="/MachineBloom/playtest/">
+            <span data-lang="en">Closed playtest</span>
+            <span data-lang="sv" hidden>Stängt speltest</span>
+          </a>
           <a class="btn btn-ghost" href="/MachineBloom/privacy/">Privacy</a>
         </div>
       </div>
     </header>
 
     <section class="section">
-      <h2>Spelet</h2>
-      <p class="lede">
+      <h2 data-lang="en">The game</h2>
+      <h2 data-lang="sv" hidden>Spelet</h2>
+      <p class="lede" data-lang="en">
+        Machine Bloom combines classic tower defense with a spatial puzzle. Every tower uses the next footprint in your
+        deployment sequence — rotate the shape, find room on the grid, and protect the path.
+      </p>
+      <p class="lede" data-lang="sv" hidden>
         Machine Bloom förenar klassiskt tornförsvar med ett rumsligt pussel. Varje torn använder nästa footprint i din
         placeringsföljd — rotera formen, hitta platsen och skydda vägen.
       </p>
-      <ul class="bullets">
+      <ul class="bullets" data-lang="en">
+        <li>Place laser, flame, and bomb towers against machines with different speeds, armor, and shields.</li>
+        <li>Share footprint edges with support towers to boost range, damage, or reload — but watch for drain nodes.</li>
+        <li>Move towers when new routes open, choose targeting priorities, and skip awkward shapes at a cost.</li>
+        <li>Victories reclaim the landscape and award crystals for permanent upgrades.</li>
+      </ul>
+      <ul class="bullets" data-lang="sv" hidden>
         <li>Placera laser-, eld- och bombtorn mot maskiner med olika hastighet, pansar och sköldar.</li>
         <li>Låt stödtorn dela kanter med stridstorn för räckvidd, skada eller omladdning — men undvik drain-noder.</li>
         <li>Flytta torn när nya vägar öppnas, välj målprioritering och hoppa över besvärliga former mot en kostnad.</li>
         <li>Seger låter landskapet återhämta sig och ger kristaller till permanenta anpassningar.</li>
       </ul>
+
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/NAqp2gi_-rI"
+          title="Machine Bloom trailer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+
       <div class="feature-strip">
         <img
           src="/assets/machinebloom/feature-graphic.png"
@@ -236,48 +274,44 @@
     </section>
 
     <section class="section" style="padding-top: 0">
-      <h2>Skärmbilder</h2>
-      <p class="lede">Från förstörda återställningsplatser till sammanhängande försvarslinjer.</p>
+      <h2 data-lang="en">Screenshots</h2>
+      <h2 data-lang="sv" hidden>Skärmbilder</h2>
+      <p class="lede" data-lang="en">From ruined restoration sites to connected defense lines.</p>
+      <p class="lede" data-lang="sv" hidden>Från förstörda återställningsplatser till sammanhängande försvarslinjer.</p>
       <div class="shots">
         <figure>
-          <img src="/assets/machinebloom/screenshot-01.png" alt="Kärnförsvar på slagfältet" width="1920" height="1080" />
-          <figcaption>Bygg ett sammankopplat försvar</figcaption>
+          <img src="/assets/machinebloom/screenshot-01.png" alt="" width="1920" height="1080" />
+          <figcaption data-lang="en">Build a connected defense</figcaption>
+          <figcaption data-lang="sv" hidden>Bygg ett sammankopplat försvar</figcaption>
         </figure>
         <figure>
-          <img
-            src="/assets/machinebloom/screenshot-02.png"
-            alt="Landskapet återhämtar sig efter seger"
-            width="1920"
-            height="1080"
-          />
-          <figcaption>Återställ biosfären</figcaption>
+          <img src="/assets/machinebloom/screenshot-02.png" alt="" width="1920" height="1080" />
+          <figcaption data-lang="en">Restore the biosphere</figcaption>
+          <figcaption data-lang="sv" hidden>Återställ biosfären</figcaption>
         </figure>
         <figure>
-          <img
-            src="/assets/machinebloom/screenshot-03.png"
-            alt="Footprint-placering på rutnätet"
-            width="1920"
-            height="1080"
-          />
-          <figcaption>Varje form förändrar planen</figcaption>
+          <img src="/assets/machinebloom/screenshot-03.png" alt="" width="1920" height="1080" />
+          <figcaption data-lang="en">Every shape changes the plan</figcaption>
+          <figcaption data-lang="sv" hidden>Varje form förändrar planen</figcaption>
         </figure>
         <figure>
-          <img
-            src="/assets/machinebloom/screenshot-04.png"
-            alt="Booster-synergier mellan torn"
-            width="1920"
-            height="1080"
-          />
-          <figcaption>Synergier mellan torn</figcaption>
+          <img src="/assets/machinebloom/screenshot-04.png" alt="" width="1920" height="1080" />
+          <figcaption data-lang="en">Tower synergies</figcaption>
+          <figcaption data-lang="sv" hidden>Synergier mellan torn</figcaption>
         </figure>
       </div>
       <div class="cta-row">
         <a
           class="btn btn-primary"
           href="https://play.google.com/store/apps/details?id=se.curiousengineerstudio.machinebloom"
-          >Öppna på Google Play</a
         >
-        <a class="btn btn-ghost" href="/MachineBloom/playtest/">Delta i stängt speltest</a>
+          <span data-lang="en">Open on Google Play</span>
+          <span data-lang="sv" hidden>Öppna på Google Play</span>
+        </a>
+        <a class="btn btn-ghost" href="/MachineBloom/playtest/">
+          <span data-lang="en">Join the closed playtest</span>
+          <span data-lang="sv" hidden>Delta i stängt speltest</span>
+        </a>
       </div>
     </section>
 
@@ -289,5 +323,6 @@
         <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
       </p>
     </footer>
+    <script src="/i18n.js"></script>
   </body>
 </html>

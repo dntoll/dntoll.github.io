@@ -1,13 +1,18 @@
 <!doctype html>
-<html lang="sv">
+<html lang="en" data-default-lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Curious Engineer Studio — indie-spelstudio bakom Machine Bloom: Tower Defense."
+      data-i18n-meta="content"
+      data-i18n-en="Curious Engineer Studio — indie game studio behind Machine Bloom: Tower Defense."
+      data-i18n-sv="Curious Engineer Studio — indie-spelstudio bakom Machine Bloom: Tower Defense."
+      content="Curious Engineer Studio — indie game studio behind Machine Bloom: Tower Defense."
     />
-    <title>Curious Engineer Studio</title>
+    <title data-i18n-meta="text" data-i18n-en="Curious Engineer Studio" data-i18n-sv="Curious Engineer Studio">
+      Curious Engineer Studio
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -73,7 +78,7 @@
 
       .tagline {
         margin: 1.25rem 0 0;
-        max-width: 28rem;
+        max-width: 32rem;
         color: var(--ink-muted);
         font-size: clamp(1.05rem, 2.2vw, 1.2rem);
       }
@@ -138,15 +143,22 @@
           height="1080"
         />
       </div>
-      <nav class="site-nav" aria-label="Huvudnavigation">
+      <nav class="site-nav" aria-label="Main navigation">
         <a class="nav-brand" href="/">Curious Engineer Studio</a>
         <div class="nav-links">
           <a href="/MachineBloom/">Machine Bloom</a>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+            <button type="button" data-set-lang="sv" aria-pressed="false">SV</button>
+          </div>
         </div>
       </nav>
       <div class="hero-content">
         <h1 class="brand fade-up">Curious Engineer Studio</h1>
-        <p class="tagline fade-up fade-up-delay">
+        <p class="tagline fade-up fade-up-delay" data-lang="en">
+          An indie game studio in Sweden. We build tactical tower defense where nature reclaims the world.
+        </p>
+        <p class="tagline fade-up fade-up-delay" data-lang="sv" hidden>
           Indie-spelstudio i Sverige. Vi bygger taktiskt tornförsvar där naturen tar tillbaka världen.
         </p>
         <a class="game-card fade-up fade-up-delay-2" href="/MachineBloom/">
@@ -158,9 +170,11 @@
           />
           <div>
             <h2>Machine Bloom: Tower Defense</h2>
-            <p>Återställ en ödelagd värld med former, torn och taktik.</p>
+            <p data-lang="en">Restore a ruined world with shapes, towers, and tactics.</p>
+            <p data-lang="sv" hidden>Återställ en ödelagd värld med former, torn och taktik.</p>
           </div>
-          <span class="go">Till spelet →</span>
+          <span class="go" data-lang="en">View the game →</span>
+          <span class="go" data-lang="sv" hidden>Till spelet →</span>
         </a>
       </div>
     </header>
@@ -170,5 +184,6 @@
         <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
       </p>
     </footer>
+    <script src="/i18n.js"></script>
   </body>
 </html>
