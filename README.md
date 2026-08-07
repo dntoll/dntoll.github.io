@@ -11,6 +11,20 @@ Publik webbplats för [curiousengineerstudio.se](https://curiousengineerstudio.s
 - `/Defence-Grid/privacy/` — permanent redirect till Machine Bloom privacy
 - `/Defence-Grid/test/` och `/Defence-Grid/release/` — publiceras av Defence-Grid CI (hemliga webbtester)
 
+## Lokal förhandsvisning
+
+```bash
+./serve.sh
+```
+
+Öppna [http://127.0.0.1:8080/](http://127.0.0.1:8080/). Annan port: `./serve.sh 3000`.
+
+På Windows (PowerShell) går det också utan skriptet:
+
+```powershell
+python -m http.server 8080 --bind 127.0.0.1
+```
+
 ## Hosting
 
 GitHub Pages från den här repots `main`-branch. Custom domain via `CNAME`.
