@@ -6,6 +6,7 @@ Publik webbplats för [curiousengineerstudio.se](https://curiousengineerstudio.s
 
 - `/` — företagslandning
 - `/MachineBloom/` — spelsida
+- `/MachineBloom/press/` — tvåspråkigt pressmaterial och högupplösta bilder
 - `/MachineBloom/privacy/` — integritetspolicy
 - `/MachineBloom/playtest/` — information om stängt Google Play-test
 - `/Defence-Grid/privacy/` — permanent redirect till Machine Bloom privacy

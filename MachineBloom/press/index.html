@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en" data-default-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      data-i18n-meta="content"
+      data-i18n-en="Machine Bloom press kit: facts, ready-to-use English and Swedish copy, and high-resolution media."
+      data-i18n-sv="Pressmaterial för Machine Bloom: fakta, färdiga svenska och engelska texter samt högupplösta bilder."
+      content="Machine Bloom press kit: facts, ready-to-use English and Swedish copy, and high-resolution media."
+    />
+    <title
+      data-i18n-meta="text"
+      data-i18n-en="Press Kit | Machine Bloom"
+      data-i18n-sv="Pressmaterial | Machine Bloom"
+    >
+      Press Kit | Machine Bloom
+    </title>
+    <link rel="icon" href="/assets/machinebloom/icon-512.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css?v=3" />
+    <style>
+      .press-hero {
+        position: relative;
+        min-height: 34rem;
+        display: grid;
+        align-items: end;
+        isolation: isolate;
+        overflow: hidden;
+      }
+
+      .press-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background: url("/assets/machinebloom/hero-bg-center.jpg") center / cover no-repeat;
+      }
+
+      .press-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background:
+          linear-gradient(180deg, rgba(6, 18, 16, 0.42), rgba(6, 18, 16, 0.78) 58%, var(--bg-deep)),
+          radial-gradient(circle at 18% 20%, rgba(110, 207, 154, 0.2), transparent 38%);
+      }
+
+      .press-hero-inner {
+        width: min(100% - 2.5rem, 68rem);
+        margin: 0 auto;
+        padding: 8.5rem 0 4rem;
+      }
+
+      .eyebrow,
+      .section-kicker {
+        margin: 0 0 0.75rem;
+        color: var(--bloom);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .press-hero h1 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: clamp(2.7rem, 8vw, 5rem);
+        line-height: 0.95;
+        letter-spacing: -0.05em;
+      }
+
+      .press-hero .intro {
+        max-width: 39rem;
+        margin: 1.2rem 0 0;
+        color: var(--ink-muted);
+        font-size: 1.1rem;
+      }
+
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1px;
+        margin: 2rem 0 0;
+        border: 1px solid var(--line);
+        background: var(--line);
+      }
+
+      .fact {
+        min-width: 0;
+        padding: 1rem 1.1rem;
+        background: rgba(8, 24, 20, 0.94);
+      }
+
+      .fact dt {
+        color: var(--ink-muted);
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .fact dd {
+        margin: 0.3rem 0 0;
+        overflow-wrap: anywhere;
+      }
+
+      .copy-list {
+        display: grid;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .copy-card {
+        padding: 1.35rem;
+        border: 1px solid var(--line);
+        background:
+          radial-gradient(circle at 0 0, var(--bloom-soft), transparent 24rem),
+          var(--bg-panel);
+      }
+
+      .copy-card h3 {
+        margin: 0 0 0.65rem;
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+        letter-spacing: -0.02em;
+      }
+
+      .copy-body p {
+        margin: 0.7rem 0 0;
+        color: var(--ink-muted);
+      }
+
+      .copy-body {
+        overflow-wrap: anywhere;
+      }
+
+      .copy-body p:first-child,
+      .copy-body h3 + p {
+        margin-top: 0;
+      }
+
+      .copy-body ul {
+        margin: 0;
+        padding-left: 1.2rem;
+        color: var(--ink-muted);
+      }
+
+      .copy-body li + li {
+        margin-top: 0.45rem;
+      }
+
+      .copy-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        min-height: 2.5rem;
+        margin-top: 1rem;
+      }
+
+      .copy-button {
+        appearance: none;
+        padding: 0.55rem 0.8rem;
+        border: 1px solid var(--line);
+        border-radius: 0.3rem;
+        background: rgba(6, 18, 16, 0.75);
+        color: var(--ink);
+        font: 700 0.82rem var(--font-body);
+        cursor: pointer;
+      }
+
+      .copy-button:hover,
+      .copy-button:focus-visible {
+        border-color: var(--bloom);
+        color: var(--bloom);
+      }
+
+      .copy-button:focus-visible,
+      .media-actions a:focus-visible {
+        outline: 2px solid var(--amber);
+        outline-offset: 3px;
+      }
+
+      .copy-status {
+        color: var(--bloom);
+        font-size: 0.82rem;
+      }
+
+      .release-copy h3 {
+        margin-top: 1.6rem;
+        color: var(--ink);
+      }
+
+      .release-copy h3:first-child {
+        margin-top: 0;
+      }
+
+      .release-copy .dateline {
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .media-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .media-card {
+        margin: 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background: rgba(8, 20, 17, 0.9);
+      }
+
+      .media-card > a {
+        display: block;
+        overflow: hidden;
+        background: #000;
+      }
+
+      .media-card img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        transition: transform 0.55s var(--ease);
+      }
+
+      .media-card > a:hover img {
+        transform: scale(1.025);
+      }
+
+      .media-card figcaption {
+        padding: 0.9rem 1rem 1rem;
+      }
+
+      .media-title {
+        display: block;
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .media-meta {
+        display: block;
+        margin-top: 0.25rem;
+        color: var(--ink-muted);
+        font-size: 0.82rem;
+      }
+
+      .media-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 0.7rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+      }
+
+      .brand-grid {
+        display: grid;
+        grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1.3fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .brand-grid .media-card img {
+        aspect-ratio: auto;
+        max-height: 25rem;
+        object-fit: contain;
+      }
+
+      @media (max-width: 52rem) {
+        .site-nav {
+          align-items: flex-start;
+        }
+
+        .facts,
+        .media-grid,
+        .brand-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 40rem) {
+        .press-hero-inner {
+          padding-top: 11rem;
+        }
+
+        .section {
+          width: min(100% - 2rem, 68rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-brand" href="/">Curious Engineer Studio</a>
+      <div class="nav-links">
+        <a href="/MachineBloom/">Machine Bloom</a>
+        <a href="/MachineBloom/the-world/">
+          <span data-lang="en">The World</span>
+          <span data-lang="sv" hidden>Världen</span>
+        </a>
+        <a href="/MachineBloom/playtest/">
+          <span data-lang="en">Playtest</span>
+          <span data-lang="sv" hidden>Speltest</span>
+        </a>
+        <a href="/MachineBloom/press/" aria-current="page">
+          <span data-lang="en">Press</span>
+          <span data-lang="sv" hidden>Pressmaterial</span>
+        </a>
+        <a href="/MachineBloom/privacy/">Privacy</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="?lang=en" data-set-lang="en" aria-pressed="true">EN</a>
+          <a href="?lang=sv" data-set-lang="sv" aria-pressed="false">SV</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="press-hero">
+      <div class="press-hero-inner">
+        <p class="eyebrow fade-up">Machine Bloom · Curious Engineer Studio</p>
+        <h1 class="fade-up fade-up-delay" data-lang="en">Press kit</h1>
+        <h1 class="fade-up fade-up-delay" data-lang="sv" hidden>Pressmaterial</h1>
+        <p class="intro fade-up fade-up-delay-2" data-lang="en">
+          Facts, ready-to-use copy, and high-resolution media for Machine Bloom: Tower Defense.
+        </p>
+        <p class="intro fade-up fade-up-delay-2" data-lang="sv" hidden>
+          Fakta, färdiga texter och högupplösta bilder för Machine Bloom: Tower Defense.
+        </p>
+        <div class="cta-row fade-up fade-up-delay-2">
+          <a class="btn btn-primary" href="#media">
+            <span data-lang="en">View media</span>
+            <span data-lang="sv" hidden>Visa bilder</span>
+          </a>
+          <a class="btn btn-ghost" href="mailto:contact@curiousengineerstudio.se">
+            <span data-lang="en">Press contact</span>
+            <span data-lang="sv" hidden>Presskontakt</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="facts">
+        <p class="section-kicker" data-lang="en">At a glance</p>
+        <p class="section-kicker" data-lang="sv" hidden>I korthet</p>
+        <h2 data-lang="en">Facts</h2>
+        <h2 data-lang="sv" hidden>Fakta</h2>
+        <p class="lede" data-lang="en">Key information for listings, articles, and coverage.</p>
+        <p class="lede" data-lang="sv" hidden>Grunduppgifter för listningar, artiklar och bevakning.</p>
+
+        <dl class="facts" data-lang="en">
+          <div class="fact"><dt>Developer &amp; publisher</dt><dd>Curious Engineer Studio</dd></div>
+          <div class="fact"><dt>Location</dt><dd>Kalmar, Sweden</dd></div>
+          <div class="fact"><dt>Genre</dt><dd>Tactical tower defense · Spatial puzzle</dd></div>
+          <div class="fact"><dt>Platform</dt><dd>Android · Google Play</dd></div>
+          <div class="fact"><dt>Status</dt><dd>Closed playtest in progress · Release date to be announced</dd></div>
+          <div class="fact"><dt>Press contact</dt><dd><a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a></dd></div>
+        </dl>
+        <dl class="facts" data-lang="sv" hidden>
+          <div class="fact"><dt>Utvecklare och utgivare</dt><dd>Curious Engineer Studio</dd></div>
+          <div class="fact"><dt>Plats</dt><dd>Kalmar, Sverige</dd></div>
+          <div class="fact"><dt>Genre</dt><dd>Taktiskt tower defense · Spatialt pussel</dd></div>
+          <div class="fact"><dt>Plattform</dt><dd>Android · Google Play</dd></div>
+          <div class="fact"><dt>Status</dt><dd>Stängt speltest pågår · Releasedatum meddelas senare</dd></div>
+          <div class="fact"><dt>Presskontakt</dt><dd><a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a></dd></div>
+        </dl>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=se.curiousengineerstudio.machinebloom">Google Play</a>
+          <a class="btn btn-ghost" href="/MachineBloom/">
+            <span data-lang="en">Game page</span>
+            <span data-lang="sv" hidden>Spelsida</span>
+          </a>
+          <a class="btn btn-ghost" href="/MachineBloom/playtest/">
+            <span data-lang="en">Closed playtest</span>
+            <span data-lang="sv" hidden>Stängt speltest</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="copy" style="padding-top: 0">
+        <p class="section-kicker" data-lang="en">Ready to use</p>
+        <p class="section-kicker" data-lang="sv" hidden>Färdigt att använda</p>
+        <h2 data-lang="en">Copy</h2>
+        <h2 data-lang="sv" hidden>Texter</h2>
+        <p class="lede" data-lang="en">Copy or adapt the text below for editorial use.</p>
+        <p class="lede" data-lang="sv" hidden>Kopiera eller bearbeta texterna nedan för redaktionellt bruk.</p>
+
+        <div class="copy-list" data-lang="en">
+          <article class="copy-card">
+            <h3>One-line pitch</h3>
+            <div class="copy-body" id="one-line-en"><p>Machine Bloom is a tactical tower-defense game where every placement is shaped by a spatial puzzle—and every victory brings a machine-scarred world back to life.</p></div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="one-line-en" data-copy-success="Copied" data-copy-failure="Could not copy">Copy text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Short description</h3>
+            <div class="copy-body" id="short-en"><p>Restore a ruined world through tactical tower defense and shifting shapes.</p></div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="short-en" data-copy-success="Copied" data-copy-failure="Could not copy">Copy text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Long description</h3>
+            <div class="copy-body" id="long-en">
+              <p>Machines have consumed the world. Build a defense network, break their advance, and let nature bloom again.</p>
+              <p>Machine Bloom combines classic tower defense with a spatial puzzle. Every tower uses the next pattern in your deployment sequence. Rotate the shape, find room on the grid, and place each weapon where it can protect the path.</p>
+              <p>Position laser, flame, and bomb towers against machines with different speeds, armor, and shields. Connect support towers along shared pattern edges to boost range, damage, or reload speed. Dense layouts are powerful, but careless clusters can drain your network.</p>
+              <p>Move towers when new routes open, match weapons to enemy defenses, choose targeting priorities, and decide whether an awkward pattern should be used now or skipped at a cost. Victories reclaim the landscape and award crystals for permanent upgrades.</p>
+              <p>Every placement is a weapon. Every shape changes the plan.</p>
+            </div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="long-en" data-copy-success="Copied" data-copy-failure="Could not copy">Copy text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Key features</h3>
+            <div class="copy-body" id="features-en">
+              <ul>
+                <li>Shape-based construction turns every tower placement into a spatial puzzle.</li>
+                <li>Laser, flame, and bomb towers answer machines with different speeds, armor, and shields.</li>
+                <li>Shared edges create support networks that boost range, damage, or reload speed.</li>
+                <li>Moving towers, targeting priorities, and pattern skipping let the defense adapt as routes change.</li>
+                <li>Campaign victories restore the landscape and award crystals for permanent upgrades.</li>
+              </ul>
+            </div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="features-en" data-copy-success="Copied" data-copy-failure="Could not copy">Copy text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Studio bio</h3>
+            <div class="copy-body" id="studio-en"><p>Curious Engineer Studio is an independent game studio based in Kalmar, Sweden. The studio creates tactical games where interconnected systems, meaningful decisions, and atmosphere matter as much as the fight. Machine Bloom: Tower Defense is the studio's current project.</p></div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="studio-en" data-copy-success="Copied" data-copy-failure="Could not copy">Copy text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+        </div>
+
+        <div class="copy-list" data-lang="sv" hidden>
+          <article class="copy-card">
+            <h3>En mening</h3>
+            <div class="copy-body" id="one-line-sv"><p>Machine Bloom är ett taktiskt tower defense-spel där varje placering formas av ett spatialt pussel – och varje seger väcker en maskinskadad värld till liv igen.</p></div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="one-line-sv" data-copy-success="Kopierat" data-copy-failure="Kunde inte kopiera">Kopiera text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Kort beskrivning</h3>
+            <div class="copy-body" id="short-sv"><p>Återställ en ödelagd värld med taktiskt tornförsvar och skiftande former.</p></div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="short-sv" data-copy-success="Kopierat" data-copy-failure="Kunde inte kopiera">Kopiera text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Lång beskrivning</h3>
+            <div class="copy-body" id="long-sv">
+              <p>Maskinerna har slukat världen. Bygg ett försvarsnät, stoppa deras framryckning och låt naturen blomma igen.</p>
+              <p>Machine Bloom förenar klassiskt tower defense med ett spatialt pussel. Varje torn använder nästa form i din placeringsföljd. Rotera formen, hitta plats på rutnätet och placera varje vapen där det bäst skyddar vägen.</p>
+              <p>Placera laser-, eld- och bombtorn mot maskiner med olika hastighet, pansar och sköldar. Koppla ihop stödtorn längs delade formkanter för att förbättra räckvidd, skada eller omladdning. Täta byggen är kraftfulla, men ogenomtänkta kluster kan dränera nätverket.</p>
+              <p>Flytta torn när nya vägar öppnas, matcha vapnen mot fiendernas skydd, välj målprioritering och avgör om en besvärlig form ska användas eller hoppas över mot en kostnad. Seger låter landskapet återhämta sig och ger kristaller till permanenta uppgraderingar.</p>
+              <p>Varje placering är ett vapen. Varje form förändrar planen.</p>
+            </div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="long-sv" data-copy-success="Kopierat" data-copy-failure="Kunde inte kopiera">Kopiera text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Nyckelfunktioner</h3>
+            <div class="copy-body" id="features-sv">
+              <ul>
+                <li>Formbaserat byggande gör varje tornplacering till ett spatialt pussel.</li>
+                <li>Laser-, eld- och bombtorn möter maskiner med olika hastighet, pansar och sköldar.</li>
+                <li>Delade kanter skapar stödnätverk som förbättrar räckvidd, skada eller omladdning.</li>
+                <li>Flyttbara torn, målprioritering och överhoppade former låter försvaret anpassas när vägarna förändras.</li>
+                <li>Segrar i kampanjen återställer landskapet och ger kristaller till permanenta uppgraderingar.</li>
+              </ul>
+            </div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="features-sv" data-copy-success="Kopierat" data-copy-failure="Kunde inte kopiera">Kopiera text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+
+          <article class="copy-card">
+            <h3>Studiopresentation</h3>
+            <div class="copy-body" id="studio-sv"><p>Curious Engineer Studio är en oberoende spelstudio i Kalmar. Studion skapar taktiska spel där sammankopplade system, meningsfulla beslut och atmosfär väger lika tungt som striden. Machine Bloom: Tower Defense är studions aktuella projekt.</p></div>
+            <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="studio-sv" data-copy-success="Kopierat" data-copy-failure="Kunde inte kopiera">Kopiera text</button><span class="copy-status" aria-live="polite"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="press-release" style="padding-top: 0">
+        <p class="section-kicker" data-lang="en">Announcement</p>
+        <p class="section-kicker" data-lang="sv" hidden>Tillkännagivande</p>
+        <h2 data-lang="en">Press release</h2>
+        <h2 data-lang="sv" hidden>Pressmeddelande</h2>
+
+        <article class="copy-card" data-lang="en">
+          <div class="copy-body release-copy" id="release-en">
+            <h3>Machine Bloom brings shape-driven tower-defense strategy to Google Play</h3>
+            <p class="dateline">Kalmar, Sweden — 20 August 2026</p>
+            <p>Independent developer Curious Engineer Studio today announced that Machine Bloom: Tower Defense is coming to Google Play. A closed playtest is currently in progress, giving invited players an early opportunity to test its distinctive combination of tactical tower defense and spatial construction.</p>
+            <p>In Machine Bloom, machines have consumed the world. Players build connected defense networks to stop their advance and help nature reclaim a scarred landscape. Every tower uses the next shape in a deployment sequence, turning each purchase into both a tactical choice and a spatial puzzle.</p>
+            <p>Laser, flame, and bomb towers answer enemies with different speeds, armor, and shields. Support towers become more effective when their shapes share edges with combat towers, but overly dense clusters risk draining the network. As routes change, players can move towers, adjust targeting priorities, invest in specialized upgrades, or skip an awkward shape at a cost.</p>
+            <p>Campaign victories restore the landscape and award crystals for permanent upgrades. Multiple difficulty levels let players refine their defense or face the machines at full strength.</p>
+            <p>Machine Bloom: Tower Defense is in closed playtesting for Android through Google Play. The release date will be announced later.</p>
+            <h3>About Curious Engineer Studio</h3>
+            <p>Curious Engineer Studio is an independent game studio based in Kalmar, Sweden. The studio creates tactical games where interconnected systems, meaningful decisions, and atmosphere matter as much as the fight.</p>
+            <h3>Press contact</h3>
+            <p>Curious Engineer Studio<br />contact@curiousengineerstudio.se<br />https://curiousengineerstudio.se/MachineBloom/</p>
+          </div>
+          <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="release-en" data-copy-success="Copied" data-copy-failure="Could not copy">Copy press release</button><span class="copy-status" aria-live="polite"></span></div>
+        </article>
+
+        <article class="copy-card" data-lang="sv" hidden>
+          <div class="copy-body release-copy" id="release-sv">
+            <h3>Machine Bloom tar formdriven tower defense-strategi till Google Play</h3>
+            <p class="dateline">Kalmar, Sverige – 20 augusti 2026</p>
+            <p>Den oberoende utvecklaren Curious Engineer Studio meddelar i dag att Machine Bloom: Tower Defense kommer till Google Play. Ett stängt speltest pågår och ger inbjudna spelare möjlighet att tidigt prova spelets särpräglade kombination av taktiskt tower defense och spatialt byggande.</p>
+            <p>I Machine Bloom har maskinerna slukat världen. Spelaren bygger sammankopplade försvarsnätverk för att stoppa deras framryckning och hjälpa naturen återta ett sargat landskap. Varje torn använder nästa form i en placeringsföljd, vilket gör varje köp till både ett taktiskt val och ett spatialt pussel.</p>
+            <p>Laser-, eld- och bombtorn möter fiender med olika hastighet, pansar och sköldar. Stödtorn blir effektivare när deras former delar kanter med stridstorn, men alltför täta kluster riskerar att dränera nätverket. När vägarna förändras kan spelaren flytta torn, justera målprioritering, investera i specialiserade uppgraderingar eller hoppa över en besvärlig form mot en kostnad.</p>
+            <p>Segrar i kampanjen återställer landskapet och ger kristaller till permanenta uppgraderingar. Flera svårighetsgrader låter spelaren finslipa sitt försvar eller möta maskinerna med full styrka.</p>
+            <p>Machine Bloom: Tower Defense speltestas för närvarande i ett stängt Android-test via Google Play. Releasedatum meddelas senare.</p>
+            <h3>Om Curious Engineer Studio</h3>
+            <p>Curious Engineer Studio är en oberoende spelstudio i Kalmar. Studion skapar taktiska spel där sammankopplade system, meningsfulla beslut och atmosfär väger lika tungt som striden.</p>
+            <h3>Presskontakt</h3>
+            <p>Curious Engineer Studio<br />contact@curiousengineerstudio.se<br />https://curiousengineerstudio.se/MachineBloom/</p>
+          </div>
+          <div class="copy-actions"><button class="copy-button" type="button" data-copy-target="release-sv" data-copy-success="Kopierat" data-copy-failure="Kunde inte kopiera">Kopiera pressmeddelande</button><span class="copy-status" aria-live="polite"></span></div>
+        </article>
+      </section>
+
+      <section class="section" id="media" style="padding-top: 0">
+        <p class="section-kicker" data-lang="en">Original files</p>
+        <p class="section-kicker" data-lang="sv" hidden>Originalfiler</p>
+        <h2 data-lang="en">High-resolution screenshots</h2>
+        <h2 data-lang="sv" hidden>Högupplösta skärmbilder</h2>
+        <p class="lede" data-lang="en">Open or download the full 1920 × 1080 PNG files individually.</p>
+        <p class="lede" data-lang="sv" hidden>Öppna eller ladda ned PNG-originalen i 1920 × 1080 var för sig.</p>
+
+        <div class="media-grid">
+          <figure class="media-card">
+            <a href="/assets/machinebloom/screenshot-01.png"><img src="/assets/machinebloom/screenshot-01.png" alt="Machine Bloom defense network holding back a machine wave" width="1920" height="1080" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Restore the world. Hold the line.</strong><strong class="media-title" data-lang="sv" hidden>Återställ världen. Håll linjen.</strong><span class="media-meta">PNG · 1920 × 1080</span><span class="media-actions"><a href="/assets/machinebloom/screenshot-01.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/screenshot-01.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+          <figure class="media-card">
+            <a href="/assets/machinebloom/screenshot-02.png"><img src="/assets/machinebloom/screenshot-02.png" alt="Restored green landscape emerging around a Machine Bloom defense" width="1920" height="1080" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Turn ruins back to life</strong><strong class="media-title" data-lang="sv" hidden>Väck ruinerna till liv</strong><span class="media-meta">PNG · 1920 × 1080</span><span class="media-actions"><a href="/assets/machinebloom/screenshot-02.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/screenshot-02.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+          <figure class="media-card">
+            <a href="/assets/machinebloom/screenshot-03.png"><img src="/assets/machinebloom/screenshot-03.png" alt="Rotatable placement shape positioned on the Machine Bloom grid" width="1920" height="1080" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Shape the perfect defense</strong><strong class="media-title" data-lang="sv" hidden>Forma det perfekta försvaret</strong><span class="media-meta">PNG · 1920 × 1080</span><span class="media-actions"><a href="/assets/machinebloom/screenshot-03.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/screenshot-03.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+          <figure class="media-card">
+            <a href="/assets/machinebloom/screenshot-04.png"><img src="/assets/machinebloom/screenshot-04.png" alt="Connected combat and support towers in Machine Bloom" width="1920" height="1080" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Connect. Boost. Adapt.</strong><strong class="media-title" data-lang="sv" hidden>Koppla. Förstärk. Anpassa.</strong><span class="media-meta">PNG · 1920 × 1080</span><span class="media-actions"><a href="/assets/machinebloom/screenshot-04.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/screenshot-04.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+          <figure class="media-card">
+            <a href="/assets/machinebloom/screenshot-05.png"><img src="/assets/machinebloom/screenshot-05.png" alt="Different tower weapons countering a Machine Bloom attack" width="1920" height="1080" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Counter every machine</strong><strong class="media-title" data-lang="sv" hidden>Bemöt varje maskin</strong><span class="media-meta">PNG · 1920 × 1080</span><span class="media-actions"><a href="/assets/machinebloom/screenshot-05.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/screenshot-05.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+          <figure class="media-card">
+            <a href="/assets/machinebloom/screenshot-06.png"><img src="/assets/machinebloom/screenshot-06.png" alt="Large machine forces approaching a fortified Machine Bloom grid" width="1920" height="1080" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Face massive machine forces</strong><strong class="media-title" data-lang="sv" hidden>Möt massiva maskinstyrkor</strong><span class="media-meta">PNG · 1920 × 1080</span><span class="media-actions"><a href="/assets/machinebloom/screenshot-06.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/screenshot-06.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="brand-assets" style="padding-top: 0">
+        <h2 data-lang="en">Brand assets</h2>
+        <h2 data-lang="sv" hidden>Grafiskt material</h2>
+        <p class="lede" data-lang="en">Game icon and Google Play feature graphic.</p>
+        <p class="lede" data-lang="sv" hidden>Spelikon och funktionsgrafik för Google Play.</p>
+        <div class="brand-grid">
+          <figure class="media-card">
+            <a href="/assets/machinebloom/icon-512.png"><img src="/assets/machinebloom/icon-512.png" alt="Machine Bloom game icon" width="512" height="512" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Game icon</strong><strong class="media-title" data-lang="sv" hidden>Spelikon</strong><span class="media-meta">PNG · 512 × 512</span><span class="media-actions"><a href="/assets/machinebloom/icon-512.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/icon-512.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+          <figure class="media-card">
+            <a href="/assets/machinebloom/feature-graphic.png"><img src="/assets/machinebloom/feature-graphic.png" alt="Machine Bloom feature graphic" width="1024" height="500" loading="lazy" /></a>
+            <figcaption><strong class="media-title" data-lang="en">Feature graphic</strong><strong class="media-title" data-lang="sv" hidden>Funktionsgrafik</strong><span class="media-meta">PNG · 1024 × 500</span><span class="media-actions"><a href="/assets/machinebloom/feature-graphic.png"><span data-lang="en">Open original</span><span data-lang="sv" hidden>Öppna original</span></a><a href="/assets/machinebloom/feature-graphic.png" download><span data-lang="en">Download</span><span data-lang="sv" hidden>Ladda ned</span></a></span></figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Machine Bloom · <a href="/">Curious Engineer Studio</a> ·
+        <a href="/MachineBloom/">
+          <span data-lang="en">Game page</span>
+          <span data-lang="sv" hidden>Spelsida</span>
+        </a>
+        · <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
+      </p>
+    </footer>
+    <script src="/i18n.js?v=2"></script>
+    <script src="/assets/machinebloom/press.js?v=1"></script>
+  </body>
+</html>

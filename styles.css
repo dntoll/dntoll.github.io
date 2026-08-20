@@ -246,6 +246,18 @@ a:hover {
   }
 }
 
+@media (max-width: 48rem) {
+  .site-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    column-gap: 1rem;
+    row-gap: 0.65rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
