@@ -8,7 +8,7 @@
     <style>
       :root {
         color-scheme: dark;
-        font-family: Manrope, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         background: #08110f;
         color: #e8f2ed;
       }
@@ -122,7 +122,7 @@
       <header>
         <p class="studio">Curious Engineer Studio</p>
         <h1>Machine Bloom<br />Privacy Policy</h1>
-        <p class="intro">How data is handled in the Android game Machine Bloom, including local saves and the optional Google Play purchase.</p>
+        <p class="intro">How data is handled in the Android game Machine Bloom, including local saves, optional gameplay analytics, Play Games leaderboards, and the optional Google Play purchase.</p>
         <nav aria-label="Languages">
           <a href="#english" lang="en">English</a>
           <a href="#svenska" lang="sv">Svenska</a>
@@ -131,28 +131,34 @@
 
       <article id="english" lang="en">
         <h2>Privacy Policy for Machine Bloom</h2>
-        <p class="effective">Effective date: 5 August 2026</p>
+        <p class="effective">Effective date: 24 August 2026</p>
         <p>Curious Engineer Studio, operated in Sweden, provides the Android game Machine Bloom. This policy explains how data is handled when you use the game.</p>
 
         <h3>Data handled by the game</h3>
-        <p>Machine Bloom does not require an account and has no developer-operated backend. We do not receive gameplay, progress, settings, contact, account, device, location, or payment data from the game. We do not sell or share personal data.</p>
+        <p>Machine Bloom does not require a developer account and has no developer-operated backend. If you choose to allow gameplay analytics, limited information is processed through Google Analytics as described below. We do not collect contact details, payment details, precise location, or tower placements. We do not sell data or use it for advertising.</p>
 
         <h3>Data stored on your device</h3>
         <p>The game stores save progress, settings, tutorial state, and related gameplay state locally on your device so that you can continue playing. It also stores a local record of whether the full campaign has been purchased. This data remains on the device until you reset the relevant save data, clear the app's storage in Android, or uninstall the app.</p>
         <p>Android backup is enabled. Depending on your device and Google account settings, Android may back up and restore some locally stored app data. You can control Android backup through your device or Google account settings.</p>
 
+        <h3>Optional Google Play Games leaderboards</h3>
+        <p>On supported Android levels, you can choose to use Google Play Games to compare your best Endless wave count. Google handles your Play Games profile and authentication, and receives the leaderboard identifier and score submitted by the game. Existing Play Games players may be authenticated automatically; profile creation or sign-in is offered when you use the feature. Declining it does not prevent play or local high scores.</p>
+        <p>The leaderboard is operated by Google, not by a server operated by us. Google's handling, visibility, retention, and deletion of Play Games profile and leaderboard data are governed by your Play Games settings and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
         <h3>Optional purchase and Google Play</h3>
         <p>Machine Bloom uses Google Play Billing for the optional purchase that unlocks the full campaign. Google Play receives and processes the information needed to display the product, complete or restore a purchase, check its status, and acknowledge it. The billing library also sends Google operational diagnostics about billing API results and service-connection issues.</p>
         <p>We do not receive your payment details or purchase history and do not send purchase information to a server operated by us. The game does not attach a game-specific account or profile identifier to the billing flow. Google's handling and retention of this data is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-        <h3>NO Advertising or analytics</h3>
-        <p>Machine Bloom contains no advertising SDK and no general-purpose user-behaviour analytics SDK. Other network-style requests in the release load files packaged with the app and do not leave the device.</p>
+        <h3>Optional gameplay analytics</h3>
+        <p>Gameplay analytics is off by default. If you choose <strong>ALLOW</strong>, Google Analytics for Firebase receives which level and difficulty you play, whether you play Campaign or Endless, and whether you win or lose. We will use this information to improve the game.</p>
+        <p>Google Analytics also processes a randomly generated identifier for this installation and basic information about the app and play session. Google may process a masked IP address as part of providing Analytics. Google Analytics may automatically record Google Play purchase events, including the product and price, but it does not receive your payment details from the game. We do not send your Play Games profile, tower placements, contact details, or Advertising ID to Analytics. Advertising personalization and advertising storage are disabled.</p>
+        <p>You can change <strong>GAMEPLAY ANALYTICS</strong> to <strong>OFF</strong> in Settings. This stops future collection and resets Analytics data stored by the game on that device. It does not necessarily delete information already processed by Google. The Analytics property is configured to retain both event data and user data for 2 months. Google's processing is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
         <h3>Security</h3>
-        <p>Gameplay data is kept in the app's local storage and is not transmitted to us. Purchase processing is delegated to Google Play Billing, so the game does not handle payment credentials. We limit data handling to what is necessary for local saves and the optional purchase.</p>
+        <p>Most gameplay data is kept in the app's local storage. If you allow gameplay analytics, the limited information described above is transmitted securely to Google Analytics. If you use a Play Games leaderboard, the relevant best wave count is transmitted to Google. Purchase processing is delegated to Google Play Billing, so the game does not handle payment credentials.</p>
 
         <h3>Retention and deletion</h3>
-        <p>We have no developer-operated user database and therefore retain no personal user data from the game. Locally stored game data remains until it is reset, the app's storage is cleared, or the app is uninstalled, subject to any Android backup controlled by your device and Google account settings. Google controls retention and deletion of data processed by Google Play under its own privacy policy and account controls.</p>
+        <p>We have no developer-operated user database. Locally stored game data remains until it is reset, the app's storage is cleared, or the app is uninstalled, subject to any Android backup controlled by your device and Google account settings. Analytics retention is described above. Google controls retention and deletion of data processed by Google Analytics, Google Play, and Play Games under its own privacy policy and account controls.</p>
 
         <h3>This policy page</h3>
         <p>This page is hosted by GitHub Pages. When you visit it, GitHub may process technical request data, such as your IP address, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. We do not use cookies or analytics on this page and do not receive visitor logs from GitHub Pages.</p>
@@ -166,28 +172,34 @@
 
       <article id="svenska" lang="sv">
         <h2>Integritetspolicy för Machine Bloom</h2>
-        <p class="effective">Gäller från: 5 augusti 2026</p>
+        <p class="effective">Gäller från: 24 augusti 2026</p>
         <p>Curious Engineer Studio, som drivs i Sverige, tillhandahåller Android-spelet Machine Bloom. Den här policyn förklarar hur uppgifter hanteras när du använder spelet.</p>
 
         <h3>Uppgifter som hanteras av spelet</h3>
-        <p>Machine Bloom kräver inget konto och har ingen server som drivs av utvecklaren. Vi tar inte emot uppgifter om spelande, progression, inställningar, kontakter, konton, enheter, plats eller betalningar från spelet. Vi säljer eller delar inte personuppgifter.</p>
+        <p>Machine Bloom kräver inget utvecklarkonto och har ingen server som drivs av utvecklaren. Om du tillåter spelanalys behandlas begränsad information genom Google Analytics enligt beskrivningen nedan. Vi samlar inte in kontaktuppgifter, betalningsuppgifter, exakt plats eller tornplaceringar. Vi säljer inte uppgifter och använder dem inte för annonsering.</p>
 
         <h3>Uppgifter som lagras på din enhet</h3>
         <p>Spelet lagrar sparad progression, inställningar, handledningsstatus och relaterad spelstatus lokalt på din enhet så att du kan fortsätta spela. Det lagrar också lokalt om hela kampanjen har köpts. Uppgifterna finns kvar på enheten tills du återställer berörda sparuppgifter, rensar appens lagring i Android eller avinstallerar appen.</p>
         <p>Android-backup är aktiverad. Beroende på dina enhets- och Google-kontoinställningar kan Android säkerhetskopiera och återställa vissa lokalt lagrade appuppgifter. Du kan styra Android-backup i inställningarna för enheten eller Google-kontot.</p>
 
+        <h3>Valfria topplistor i Google Play Spel</h3>
+        <p>På Android-banor som stöder funktionen kan du välja att använda Google Play Spel för att jämföra ditt bästa antal vågor i Endless. Google hanterar din Play Spel-profil och autentisering och tar emot topplistans identifierare och resultatet som spelet skickar. Befintliga Play Spel-användare kan autentiseras automatiskt; profilskapande eller inloggning erbjuds när du använder funktionen. Om du avböjer kan du fortfarande spela och använda lokala topplistor.</p>
+        <p>Topplistan drivs av Google, inte av en server som drivs av oss. Googles hantering, synlighet, lagring och radering av Play Spel-profiler och topplistedata regleras av dina Play Spel-inställningar och <a href="https://policies.google.com/privacy">Googles integritetspolicy</a>.</p>
+
         <h3>Valfritt köp och Google Play</h3>
         <p>Machine Bloom använder Google Play Billing för det valfria köpet som låser upp hela kampanjen. Google Play tar emot och behandlar de uppgifter som behövs för att visa produkten, genomföra eller återställa ett köp, kontrollera köpets status och bekräfta det. Billing-biblioteket skickar även driftsdiagnostik till Google om resultat från billing-anrop och problem med anslutningen till tjänsten.</p>
         <p>Vi tar inte emot dina betalningsuppgifter eller din köphistorik och skickar inte köpuppgifter till en server som drivs av oss. Spelet kopplar inget spelspecifikt konto- eller profil-ID till billing-flödet. Googles hantering och lagring av dessa uppgifter regleras av <a href="https://policies.google.com/privacy">Googles integritetspolicy</a>.</p>
 
-        <h3>INGA annonser eller analysverktyg</h3>
-        <p>Machine Bloom innehåller inget SDK för annonser och inget SDK för allmän analys av användarbeteende. Övriga nätverksliknande anrop i releasen läser filer som är paketerade med appen och lämnar inte enheten.</p>
+        <h3>Valfri spelanalys</h3>
+        <p>Spelanalys är avstängt från början. Om du väljer <strong>ALLOW</strong> tar Google Analytics for Firebase emot vilken bana och svårighetsgrad du spelar, om du spelar Campaign eller Endless samt om du vinner eller förlorar. Vi använder informationen för att förbättra spelet.</p>
+        <p>Google Analytics behandlar också ett slumpmässigt identifieringsnummer för den här installationen och grundläggande information om appen och spelsessionen. Google kan behandla en maskerad IP-adress som en del av Analytics-tjänsten. Google Analytics kan automatiskt registrera köphändelser från Google Play, inklusive produkt och pris, men tar inte emot dina betalningsuppgifter från spelet. Vi skickar inte din Play Spel-profil, tornplaceringar, kontaktuppgifter eller Advertising ID till Analytics. Annonsanpassning och lagring för annonser är avstängda.</p>
+        <p>Du kan ändra <strong>GAMEPLAY ANALYTICS</strong> till <strong>OFF</strong> i Settings. Det stoppar framtida insamling och återställer Analytics-data som spelet lagrar på enheten. Det raderar inte nödvändigtvis information som Google redan har behandlat. Analytics-egenskapen är inställd på att lagra både händelsedata och användardata i 2 månader. Googles behandling regleras av <a href="https://policies.google.com/privacy">Googles integritetspolicy</a>.</p>
 
         <h3>Säkerhet</h3>
-        <p>Speluppgifter sparas i appens lokala lagring och överförs inte till oss. Köp hanteras av Google Play Billing, så spelet hanterar inte betalningsuppgifter. Vi begränsar uppgiftshanteringen till det som behövs för lokala sparfiler och det valfria köpet.</p>
+        <p>De flesta speluppgifter sparas i appens lokala lagring. Om du tillåter spelanalys överförs den begränsade information som beskrivs ovan säkert till Google Analytics. Om du använder en topplista i Play Spel överförs det relevanta bästa vågresultatet till Google. Köp hanteras av Google Play Billing, så spelet hanterar inte betalningsuppgifter.</p>
 
         <h3>Lagringstid och radering</h3>
-        <p>Vi har ingen användardatabas som drivs av utvecklaren och lagrar därför inga personuppgifter från spelet. Lokala speluppgifter finns kvar tills de återställs, appens lagring rensas eller appen avinstalleras, med förbehåll för eventuell Android-backup som styrs av enhetens och Google-kontots inställningar. Google styr lagring och radering av uppgifter som behandlas av Google Play enligt sin egen integritetspolicy och sina kontoinställningar.</p>
+        <p>Vi har ingen användardatabas som drivs av utvecklaren. Lokala speluppgifter finns kvar tills de återställs, appens lagring rensas eller appen avinstalleras, med förbehåll för eventuell Android-backup som styrs av enhetens och Google-kontots inställningar. Lagringstiden för Analytics beskrivs ovan. Google styr lagring och radering av uppgifter som behandlas av Google Analytics, Google Play och Play Spel enligt sin egen integritetspolicy och sina kontoinställningar.</p>
 
         <h3>Den här policysidan</h3>
         <p>Den här sidan lagras på GitHub Pages. När du besöker den kan GitHub behandla tekniska uppgifter om anropet, exempelvis din IP-adress, enligt <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs integritetspolicy</a>. Vi använder inte cookies eller analysverktyg på sidan och får inte tillgång till besöksloggar från GitHub Pages.</p>
@@ -199,10 +211,7 @@
         <p>Kontakta Curious Engineer Studio på <a href="mailto:support@curiousengineerstudio.se">support@curiousengineerstudio.se</a> vid frågor om integritet eller support.</p>
       </article>
 
-      <footer>
-        Machine Bloom · Curious Engineer Studio · Sweden ·
-        <a href="/MachineBloom/">Tillbaka till spelet</a>
-      </footer>
+      <footer>Machine Bloom · Curious Engineer Studio · Sweden</footer>
     </main>
   </body>
 </html>
