@@ -133,6 +133,102 @@
         font-weight: 700;
         font-size: 0.9rem;
       }
+
+      .news-section {
+        width: min(100% - 2.5rem, 68rem);
+        margin: 0 auto;
+        padding: 4.5rem 0 5rem;
+      }
+
+      .news-kicker {
+        margin: 0 0 0.75rem;
+        color: var(--bloom);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .news-section > h2 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 3rem);
+        letter-spacing: -0.04em;
+        line-height: 1.05;
+      }
+
+      .news-list {
+        display: grid;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .news-card {
+        display: grid;
+        grid-template-columns: minmax(14rem, 0.8fr) minmax(0, 1.2fr);
+        overflow: hidden;
+        border: 1px solid var(--line);
+        background:
+          radial-gradient(circle at 100% 0, var(--bloom-soft), transparent 28rem),
+          var(--bg-panel);
+      }
+
+      .news-media {
+        display: block;
+        min-height: 15rem;
+        background: #000;
+      }
+
+      .news-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .news-copy {
+        padding: clamp(1.35rem, 4vw, 2.2rem);
+      }
+
+      .news-copy time {
+        color: var(--amber);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .news-copy h3 {
+        margin: 0.6rem 0 0;
+        font-family: var(--font-display);
+        font-size: clamp(1.35rem, 3vw, 2rem);
+        line-height: 1.15;
+        letter-spacing: -0.03em;
+      }
+
+      .news-copy h3 a {
+        color: var(--ink);
+        text-decoration: none;
+      }
+
+      .news-copy h3 a:hover {
+        color: var(--bloom);
+      }
+
+      .news-copy p {
+        margin: 0.9rem 0 0;
+        color: var(--ink-muted);
+      }
+
+      .news-link {
+        display: inline-block;
+        margin-top: 1.2rem;
+        font-weight: 700;
+      }
+
+      @media (max-width: 48rem) {
+        .news-card { grid-template-columns: 1fr; }
+        .news-media { min-height: 11rem; }
+      }
     </style>
   </head>
   <body>
@@ -157,6 +253,11 @@
             <span data-lang="en">Contact</span>
             <span data-lang="sv" hidden>Kontakt</span>
           </a>
+          <a href="#news">
+            <span data-lang="en">News</span>
+            <span data-lang="sv" hidden>Nyheter</span>
+          </a>
+          <a href="https://www.linkedin.com/company/curious-engineer-studio/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="/integritet/">
             <span data-lang="en">Privacy</span>
             <span data-lang="sv" hidden>Integritet</span>
@@ -192,6 +293,33 @@
         </a>
       </div>
     </header>
+    <main>
+      <section class="news-section" id="news">
+        <p class="news-kicker" data-lang="en">From the studio</p>
+        <p class="news-kicker" data-lang="sv" hidden>Från studion</p>
+        <h2 id="news-title-en" data-lang="en">Latest news</h2>
+        <h2 id="news-title-sv" data-lang="sv" hidden>Senaste nytt</h2>
+
+        <div class="news-list">
+          <article class="news-card">
+            <a class="news-media" href="/MachineBloom/press/#press-release">
+              <img src="/assets/machinebloom/feature-graphic.png" alt="Machine Bloom: Tower Defense" width="1024" height="500" loading="lazy" />
+            </a>
+            <div class="news-copy">
+              <time datetime="2026-08-28">
+                <span data-lang="en">28 August 2026</span>
+                <span data-lang="sv" hidden>28 augusti 2026</span>
+              </time>
+              <h3 data-lang="en"><a href="/MachineBloom/press/#press-release">Successful Machine Bloom playtest leads to a new ambassador program</a></h3>
+              <h3 data-lang="sv" hidden><a href="/MachineBloom/press/#press-release">Lyckat speltest för Machine Bloom leder vidare till ett nytt ambassadörsprogram</a></h3>
+              <p data-lang="en">More than 20 testers took part in the 14-day closed playtest, providing valuable feedback while more than 10 updates were released. The game is now being prepared for release as Curious Engineer Studio opens its voluntary ambassador program.</p>
+              <p data-lang="sv" hidden>Över 20 testare deltog i det 14 dagar långa stängda speltestet och lämnade värdefull feedback samtidigt som över 10 uppdateringar släpptes. Spelet görs nu redo för lansering när Curious Engineer Studio öppnar sitt frivilliga ambassadörsprogram.</p>
+              <a class="news-link" href="/MachineBloom/press/#press-release"><span data-lang="en">Read the press release →</span><span data-lang="sv" hidden>Läs pressmeddelandet →</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
     <footer class="site-footer">
       <p>
         © Curious Engineer Studio ·
@@ -211,6 +339,8 @@
         </a>
         ·
         <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a>
+        ·
+        <a href="https://www.linkedin.com/company/curious-engineer-studio/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
     </footer>
     <script src="/i18n.js?v=2"></script>

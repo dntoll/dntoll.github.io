@@ -6,9 +6,11 @@ Publik webbplats för [curiousengineerstudio.se](https://curiousengineerstudio.s
 
 - `/` — företagslandning
 - `/MachineBloom/` — spelsida
+- `/MachineBloom/ambassadors/` — tvåspråkigt ambassadörsprogram och intresseanmälan
+- `/MachineBloom/ambassadors/android-access/` — guide för Android-teståtkomst via Google Play
 - `/MachineBloom/press/` — tvåspråkigt pressmaterial och högupplösta bilder
 - `/MachineBloom/privacy/` — integritetspolicy
-- `/MachineBloom/playtest/` — information om stängt Google Play-test
+- `/MachineBloom/playtest/` — äldre länk som leder vidare till ambassadörsprogrammet
 - `/Defence-Grid/privacy/` — permanent redirect till Machine Bloom privacy
 - `/Defence-Grid/test/` och `/Defence-Grid/release/` — publiceras av Defence-Grid CI (hemliga webbtester)
 

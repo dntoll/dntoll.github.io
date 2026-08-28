@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" data-default-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/machinebloom/icon-512.png" type="image/png" />
+    <meta
+      name="description"
+      data-i18n-meta="content"
+      data-i18n-en="Become a Machine Bloom ambassador: early access, honest feedback, and optional ways to help an independent tower-defense puzzle game grow."
+      data-i18n-sv="Bli Machine Bloom-ambassadör: tidig tillgång, ärlig feedback och frivilliga sätt att hjälpa ett oberoende tower defense-pusselspel att växa."
+      content="Become a Machine Bloom ambassador: early access, honest feedback, and optional ways to help an independent tower-defense puzzle game grow."
+    />
+    <title
+      data-i18n-meta="text"
+      data-i18n-en="Ambassadors | Machine Bloom"
+      data-i18n-sv="Ambassadörer | Machine Bloom"
+    >Ambassadors | Machine Bloom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css?v=3" />
+    <style>
+      .ambassador-hero {
+        position: relative;
+        min-height: 36rem;
+        display: grid;
+        align-items: end;
+        isolation: isolate;
+        overflow: hidden;
+      }
+
+      .ambassador-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background: url("/assets/machinebloom/hero-bg-center.jpg") center / cover no-repeat;
+      }
+
+      .ambassador-hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background:
+          linear-gradient(180deg, rgba(6, 18, 16, 0.38), rgba(6, 18, 16, 0.8) 58%, var(--bg-deep)),
+          radial-gradient(circle at 20% 20%, rgba(110, 207, 154, 0.2), transparent 38%);
+      }
+
+      .hero-inner {
+        width: min(100% - 2.5rem, 68rem);
+        margin: 0 auto;
+        padding: 8.5rem 0 4rem;
+      }
+
+      .eyebrow,
+      .section-kicker {
+        margin: 0 0 0.75rem;
+        color: var(--bloom);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .ambassador-hero h1 {
+        margin: 0;
+        max-width: 13ch;
+        font-family: var(--font-display);
+        font-size: clamp(2.7rem, 8vw, 5rem);
+        line-height: 0.95;
+        letter-spacing: -0.05em;
+      }
+
+      .ambassador-hero .intro {
+        max-width: 42rem;
+        margin: 1.2rem 0 0;
+        color: var(--ink-muted);
+        font-size: 1.1rem;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .info-card,
+      .principles,
+      .form-panel {
+        padding: 1.35rem;
+        border: 1px solid var(--line);
+        background:
+          radial-gradient(circle at 0 0, var(--bloom-soft), transparent 22rem),
+          var(--bg-panel);
+      }
+
+      .info-card h3,
+      .principles h3,
+      .form-panel h3 {
+        margin: 0 0 0.65rem;
+        font-family: var(--font-display);
+        font-size: 1.2rem;
+      }
+
+      .info-card p,
+      .form-panel p {
+        margin: 0;
+        color: var(--ink-muted);
+      }
+
+      .check-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: var(--ink-muted);
+      }
+
+      .check-list li {
+        position: relative;
+        padding-left: 1.2rem;
+      }
+
+      .check-list li + li {
+        margin-top: 0.65rem;
+      }
+
+      .check-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.6rem;
+        width: 0.46rem;
+        height: 0.46rem;
+        border-radius: 1px;
+        background: var(--amber);
+      }
+
+      .principles {
+        margin-top: 2rem;
+        border-color: rgba(232, 184, 109, 0.42);
+      }
+
+      .principles strong {
+        color: var(--ink);
+      }
+
+      .form-panel {
+        margin-top: 2rem;
+      }
+
+      .form-frame {
+        width: 100%;
+        min-height: 76rem;
+        margin-top: 1rem;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      .contact-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        margin: 1rem 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .platforms {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+        margin-top: 1.25rem;
+      }
+
+      .platforms span {
+        padding: 0.45rem 0.7rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--ink-muted);
+        font-size: 0.88rem;
+      }
+
+      @media (max-width: 52rem) {
+        .card-grid { grid-template-columns: 1fr; }
+      }
+
+      @media (max-width: 40rem) {
+        .hero-inner { padding-top: 12rem; }
+        .section { width: min(100% - 2rem, 68rem); }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-brand" href="/">Curious Engineer Studio</a>
+      <div class="nav-links">
+        <a href="/MachineBloom/">Machine Bloom</a>
+        <a href="/MachineBloom/the-world/"><span data-lang="en">The World</span><span data-lang="sv" hidden>Världen</span></a>
+        <a href="/MachineBloom/ambassadors/" aria-current="page"><span data-lang="en">Ambassadors</span><span data-lang="sv" hidden>Ambassadörer</span></a>
+        <a href="/MachineBloom/press/"><span data-lang="en">Press</span><span data-lang="sv" hidden>Pressmaterial</span></a>
+        <a href="/MachineBloom/privacy/">Privacy</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="?lang=en" data-set-lang="en" aria-pressed="true">EN</a>
+          <a href="?lang=sv" data-set-lang="sv" aria-pressed="false">SV</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="ambassador-hero">
+      <div class="hero-inner">
+        <p class="eyebrow fade-up">Machine Bloom · Curious Engineer Studio</p>
+        <h1 class="fade-up fade-up-delay" data-lang="en">Become an ambassador</h1>
+        <h1 class="fade-up fade-up-delay" data-lang="sv" hidden>Bli ambassadör</h1>
+        <p class="intro fade-up fade-up-delay-2" data-lang="en">
+          Do you enjoy tower defense, puzzle games—or both? Join a small group around Machine Bloom, get early access, and help in whatever way feels natural to you.
+        </p>
+        <p class="intro fade-up fade-up-delay-2" data-lang="sv" hidden>
+          Gillar du tower defense, pusselspel – eller båda? Bli en del av en liten grupp kring Machine Bloom, få tidig tillgång och hjälp till på det sätt som känns naturligt för dig.
+        </p>
+        <div class="cta-row fade-up fade-up-delay-2">
+          <a class="btn btn-primary" href="#apply"><span data-lang="en">Register your interest</span><span data-lang="sv" hidden>Gör en intresseanmälan</span></a>
+          <a class="btn btn-ghost" href="/MachineBloom/press/#share"><span data-lang="en">Sharing material</span><span data-lang="sv" hidden>Delningsmaterial</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <p class="section-kicker" data-lang="en">The right people</p>
+        <p class="section-kicker" data-lang="sv" hidden>Rätt personer</p>
+        <h2 data-lang="en">A relaxed role for curious players</h2>
+        <h2 data-lang="sv" hidden>En lättsam roll för nyfikna spelare</h2>
+        <p class="lede" data-lang="en">We are looking for people who genuinely enjoy the ideas behind Machine Bloom. Expressions of interest are reviewed personally and do not guarantee a place.</p>
+        <p class="lede" data-lang="sv" hidden>Vi söker personer som verkligen uppskattar idéerna bakom Machine Bloom. Intresseanmälningar granskas personligen och innebär inte automatiskt en plats.</p>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <h3 data-lang="en">What ambassadors receive</h3>
+            <h3 data-lang="sv" hidden>Det här får ambassadörer</h3>
+            <ul class="check-list" data-lang="en">
+              <li>Early access to new features and updates.</li>
+              <li>Android test access to the full campaign through Google Play license testing.</li>
+              <li>Your name or nickname in the game credits, only if you opt in.</li>
+              <li>Official videos, images, short copy, and news to use when you want.</li>
+            </ul>
+            <ul class="check-list" data-lang="sv" hidden>
+              <li>Tidig tillgång till nya funktioner och uppdateringar.</li>
+              <li>Android-teståtkomst till hela kampanjen via Google Plays licenstestning.</li>
+              <li>Ditt namn eller nickname i spelets credits, endast om du själv väljer det.</li>
+              <li>Officiella videor, bilder, korta texter och nyheter att använda när du vill.</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <h3 data-lang="en">Ways you may choose to help</h3>
+            <h3 data-lang="sv" hidden>Frivilliga sätt att hjälpa till</h3>
+            <ul class="check-list" data-lang="en">
+              <li>Play new versions when you have time.</li>
+              <li>Send honest feedback and bug reports by DM.</li>
+              <li>Review the website, press material, store page, or game presentation.</li>
+              <li>Follow, like, comment, share, or tell someone about the game when you genuinely want to.</li>
+            </ul>
+            <ul class="check-list" data-lang="sv" hidden>
+              <li>Spela nya versioner när du själv har tid.</li>
+              <li>Skicka ärlig feedback och buggrapporter via DM.</li>
+              <li>Granska hemsidan, pressmaterialet, butikssidan eller presentationen av spelet.</li>
+              <li>Följa, gilla, kommentera, dela eller berätta om spelet när du själv verkligen vill.</li>
+            </ul>
+          </article>
+        </div>
+
+        <aside class="principles">
+          <h3 data-lang="en">Voluntary means voluntary</h3>
+          <h3 data-lang="sv" hidden>Frivilligt betyder frivilligt</h3>
+          <p data-lang="en"><strong>There are no fixed hours, activity targets, or expectations of positive feedback.</strong> Honest and critical feedback is welcome. Benefits are never conditional on public posts, ratings, or reviews, and you will never be asked for a high rating.</p>
+          <p data-lang="sv" hidden><strong>Det finns inga fasta timmar, aktivitetsmål eller förväntningar på positiv återkoppling.</strong> Ärlig och kritisk feedback är välkommen. Förmåner är aldrig villkorade av offentliga inlägg, betyg eller recensioner, och du kommer aldrig att ombes ge ett högt betyg.</p>
+        </aside>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <p class="section-kicker" data-lang="en">Platforms</p>
+        <p class="section-kicker" data-lang="sv" hidden>Plattformar</p>
+        <h2 data-lang="en">Tell us where you would like to play</h2>
+        <h2 data-lang="sv" hidden>Berätta var du helst vill spela</h2>
+        <p class="lede" data-lang="en">Players on all of these platforms are welcome to register their interest. Android has active test distribution today; the other choices help us understand and plan future platform support.</p>
+        <p class="lede" data-lang="sv" hidden>Spelare på alla dessa plattformar är välkomna att anmäla intresse. Android har en aktiv testdistribution i dag; övriga val hjälper oss förstå och planera framtida plattformsstöd.</p>
+        <div class="platforms" aria-label="Platforms"><span>Android</span><span>iPhone</span><span>PC · Steam</span><span>Mac</span><span>Linux</span></div>
+        <aside class="principles">
+          <h3 data-lang="en">Playing on iPhone? You are welcome now.</h3>
+          <h3 data-lang="sv" hidden>Spelar du på iPhone? Du är välkommen redan nu.</h3>
+          <p data-lang="en">You can register your interest and join the community even though there is no iPhone test build yet. We will not promise a date, but your interest helps us understand where players want Machine Bloom next.</p>
+          <p data-lang="sv" hidden>Du kan anmäla intresse och bli en del av gemenskapen även om det ännu inte finns någon testversion för iPhone. Vi lovar inget datum, men ditt intresse hjälper oss förstå var spelare vill se Machine Bloom härnäst.</p>
+        </aside>
+        <div class="cta-row">
+          <a class="btn btn-ghost" href="/MachineBloom/ambassadors/android-access/"><span data-lang="en">How Android access works</span><span data-lang="sv" hidden>Så fungerar Android-åtkomst</span></a>
+        </div>
+      </section>
+
+      <section class="section" id="apply" style="padding-top: 0">
+        <p class="section-kicker" data-lang="en">Expression of interest</p>
+        <p class="section-kicker" data-lang="sv" hidden>Intresseanmälan</p>
+        <h2 data-lang="en">Interested?</h2>
+        <h2 data-lang="sv" hidden>Intresserad?</h2>
+        <p class="lede" data-lang="en">The form asks about your contact details, game interests, preferred platforms, optional credit name, and the kinds of participation that sound enjoyable to you.</p>
+        <p class="lede" data-lang="sv" hidden>Formuläret frågar efter kontaktuppgifter, spelintressen, önskade plattformar, frivilligt namn i credits och vilka former av deltagande som verkar roliga för dig.</p>
+
+        <div class="form-panel" data-form-status="ready">
+          <h3 data-lang="en">Application form</h3>
+          <h3 data-lang="sv" hidden>Anmälningsformulär</h3>
+          <p data-lang="en">Complete the form below, or open it in a separate window. Submitting an expression of interest does not automatically guarantee a place in the program.</p>
+          <p data-lang="sv" hidden>Fyll i formuläret nedan eller öppna det i ett separat fönster. En intresseanmälan innebär inte automatiskt en plats i programmet.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://forms.gle/PrHPhE4x5nnkgVNo6" target="_blank" rel="noopener"><span data-lang="en">Open application form</span><span data-lang="sv" hidden>Öppna anmälningsformuläret</span></a>
+          </div>
+          <iframe
+            class="form-frame"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScmdBD1Au-Kator2o3SCIHsOIxAmEZ7pN-pPZpPyKfPkIf4mQ/viewform?embedded=true"
+            title="Machine Bloom ambassador application"
+            loading="lazy"
+          >Loading…</iframe>
+          <p style="margin-top: 1rem" data-lang="en">Information from unsuccessful or inactive expressions of interest is deleted after three months. Read the <a href="/integritet/">website privacy policy</a>.</p>
+          <p style="margin-top: 1rem" data-lang="sv" hidden>Uppgifter från ej antagna eller inaktiva intresseanmälningar raderas efter tre månader. Läs <a href="/integritet/">webbplatsens integritetspolicy</a>.</p>
+        </div>
+
+        <h3 style="margin: 2rem 0 0; font-family: var(--font-display)" data-lang="en">Prefer a direct message?</h3>
+        <h3 style="margin: 2rem 0 0; font-family: var(--font-display)" data-lang="sv" hidden>Föredrar du ett direktmeddelande?</h3>
+        <ul class="contact-list">
+          <li><a href="mailto:contact@curiousengineerstudio.se">Email</a></li>
+          <li><a href="https://www.instagram.com/machinebloom">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/curious-engineer-studio/">LinkedIn</a></li>
+        </ul>
+        <p style="margin-top: 1rem; color: var(--ink-muted)" data-lang="en">In your message, include the name or nickname we should use to contact you, whether you enjoy tower defense, puzzle games, or both, and the platforms you would like to play on. If you choose Android, also include the Gmail used for Google Play. Tell us separately whether—and exactly how—you would like to appear in the credits.</p>
+        <p style="margin-top: 1rem; color: var(--ink-muted)" data-lang="sv" hidden>Skriv vilket namn eller nickname vi ska använda när vi kontaktar dig, om du gillar tower defense, pusselspel eller båda samt vilka plattformar du vill spela på. Om du väljer Android behöver du också ange den Gmail som används för Google Play. Berätta separat om – och exakt hur – du vill stå i spelets credits.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Machine Bloom · <a href="/">Curious Engineer Studio</a> · <a href="/MachineBloom/press/"><span data-lang="en">Press kit</span><span data-lang="sv" hidden>Pressmaterial</span></a> · <a href="mailto:contact@curiousengineerstudio.se">contact@curiousengineerstudio.se</a></p>
+    </footer>
+    <script src="/i18n.js?v=2"></script>
+  </body>
+</html>
