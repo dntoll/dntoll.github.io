@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/Defence-Grid/release/favicon.png" />
-    <link rel="apple-touch-icon" href="/Defence-Grid/release/favicon.png" />
+    <link rel="icon" type="image/png" href="/assets/machinebloom/icon-512.png" />
+    <link rel="apple-touch-icon" href="/assets/machinebloom/icon-512.png" />
     <meta
       name="description"
       data-i18n-meta="content"
@@ -108,7 +108,7 @@
 
       .shots {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
         margin-top: 2rem;
       }
@@ -117,6 +117,7 @@
         margin: 0;
         overflow: hidden;
         border: 1px solid var(--line);
+        border-radius: 0.7rem;
         background: #000;
       }
 
@@ -141,6 +142,7 @@
       .feature-strip {
         margin-top: 2.5rem;
         border: 1px solid var(--line);
+        border-radius: 0.7rem;
         overflow: hidden;
       }
 
@@ -174,6 +176,51 @@
         height: 0.45rem;
         background: var(--amber);
         border-radius: 1px;
+      }
+
+      .machine-showcase {
+        display: grid;
+        grid-template-columns: minmax(15rem, 0.8fr) minmax(0, 1.4fr);
+        align-items: center;
+        gap: clamp(1.75rem, 5vw, 4rem);
+      }
+
+      .machine-showcase-copy .lede {
+        margin-bottom: 1.5rem;
+      }
+
+      .machine-preview-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.65rem;
+      }
+
+      .machine-preview-card {
+        display: block;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 0.7rem;
+        background: #071815;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.24);
+      }
+
+      .machine-preview-card img {
+        width: 100%;
+        transition: transform 0.7s var(--ease);
+      }
+
+      .machine-preview-card:hover img {
+        transform: scale(1.03);
+      }
+
+      @media (max-width: 56rem) {
+        .shots {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .machine-showcase {
+          grid-template-columns: 1fr;
+        }
       }
 
       @media (max-width: 40rem) {
@@ -291,31 +338,65 @@
       </div>
     </section>
 
+    <section class="section machine-showcase" id="machines" style="padding-top: 0">
+      <div class="machine-showcase-copy">
+        <p class="eyebrow">Field intelligence</p>
+        <h2 data-lang="en">Meet the machines</h2>
+        <h2 data-lang="sv" hidden>Möt maskinerna</h2>
+        <p class="lede" data-lang="en">
+          Fast scouts, armored haulers, weapon-matched shields, and the towering Foundry each demand a different answer.
+        </p>
+        <p class="lede" data-lang="sv" hidden>
+          Snabba spanare, bepansrade transportörer, vapenkopplade sköldar och den väldiga Foundry kräver alla olika svar.
+        </p>
+        <a class="btn btn-ghost" href="/MachineBloom/the-world/#machines">
+          <span data-lang="en">Explore every machine</span>
+          <span data-lang="sv" hidden>Utforska alla maskiner</span>
+        </a>
+      </div>
+      <div class="machine-preview-grid">
+        <a class="machine-preview-card" href="/MachineBloom/the-world/#machines"><img src="/assets/machinebloom/world/enemies/miner.png" alt="Miner" width="640" height="420" loading="lazy" /></a>
+        <a class="machine-preview-card" href="/MachineBloom/the-world/#machines"><img src="/assets/machinebloom/world/enemies/hauler.png" alt="Hauler" width="640" height="420" loading="lazy" /></a>
+        <a class="machine-preview-card" href="/MachineBloom/the-world/#machines"><img src="/assets/machinebloom/world/enemies/scout.png" alt="Scout" width="640" height="420" loading="lazy" /></a>
+        <a class="machine-preview-card" href="/MachineBloom/the-world/#machines"><img src="/assets/machinebloom/world/enemies/foundry.png" alt="Foundry" width="640" height="420" loading="lazy" /></a>
+      </div>
+    </section>
+
     <section class="section" style="padding-top: 0">
       <h2 data-lang="en">Screenshots</h2>
       <h2 data-lang="sv" hidden>Skärmbilder</h2>
-      <p class="lede" data-lang="en">From ruined restoration sites to connected defense lines.</p>
-      <p class="lede" data-lang="sv" hidden>Från förstörda återställningsplatser till sammanhängande försvarslinjer.</p>
+      <p class="lede" data-lang="en">Six views from the latest build, from first defenses to the Foundry assault.</p>
+      <p class="lede" data-lang="sv" hidden>Sex vyer från den senaste versionen, från det första försvaret till Foundrys anfall.</p>
       <div class="shots">
         <figure>
-          <img src="/assets/machinebloom/screenshot-01.png" alt="" width="1920" height="1080" />
-          <figcaption data-lang="en">Build a connected defense</figcaption>
-          <figcaption data-lang="sv" hidden>Bygg ett sammankopplat försvar</figcaption>
+          <img src="/assets/machinebloom/screenshot-01.png" alt="Machine Bloom defense network holding back a machine wave" width="1920" height="1080" loading="lazy" />
+          <figcaption data-lang="en">Restore the world. Hold the line.</figcaption>
+          <figcaption data-lang="sv" hidden>Återställ världen. Håll linjen.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/machinebloom/screenshot-02.png" alt="" width="1920" height="1080" />
-          <figcaption data-lang="en">Restore the biosphere</figcaption>
-          <figcaption data-lang="sv" hidden>Återställ biosfären</figcaption>
+          <img src="/assets/machinebloom/screenshot-02.png" alt="Restored green landscape emerging around a Machine Bloom defense" width="1920" height="1080" loading="lazy" />
+          <figcaption data-lang="en">Turn ruins back to life</figcaption>
+          <figcaption data-lang="sv" hidden>Väck ruinerna till liv</figcaption>
         </figure>
         <figure>
-          <img src="/assets/machinebloom/screenshot-03.png" alt="" width="1920" height="1080" />
-          <figcaption data-lang="en">Every shape changes the plan</figcaption>
-          <figcaption data-lang="sv" hidden>Varje form förändrar planen</figcaption>
+          <img src="/assets/machinebloom/screenshot-03.png" alt="Rotatable placement shape positioned on the Machine Bloom grid" width="1920" height="1080" loading="lazy" />
+          <figcaption data-lang="en">Shape the perfect defense</figcaption>
+          <figcaption data-lang="sv" hidden>Forma det perfekta försvaret</figcaption>
         </figure>
         <figure>
-          <img src="/assets/machinebloom/screenshot-04.png" alt="" width="1920" height="1080" />
-          <figcaption data-lang="en">Tower synergies</figcaption>
-          <figcaption data-lang="sv" hidden>Synergier mellan torn</figcaption>
+          <img src="/assets/machinebloom/screenshot-04.png" alt="Connected combat and support towers in Machine Bloom" width="1920" height="1080" loading="lazy" />
+          <figcaption data-lang="en">Connect. Boost. Adapt.</figcaption>
+          <figcaption data-lang="sv" hidden>Koppla. Förstärk. Anpassa.</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/machinebloom/screenshot-05.png" alt="Different tower weapons countering a Machine Bloom attack" width="1920" height="1080" loading="lazy" />
+          <figcaption data-lang="en">Counter every machine</figcaption>
+          <figcaption data-lang="sv" hidden>Bemöt varje maskin</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/machinebloom/screenshot-06.png" alt="Large machine forces approaching a fortified Machine Bloom grid" width="1920" height="1080" loading="lazy" />
+          <figcaption data-lang="en">Face massive machine forces</figcaption>
+          <figcaption data-lang="sv" hidden>Möt massiva maskinstyrkor</figcaption>
         </figure>
       </div>
       <div class="cta-row">
