@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "57b2a127d1b585bbf39082372b95ec3d58640ce1",
+  "sourceRevision": "664f7e9d7ca2a906a43b4dbae6ce57dd475f4bf1",
   "files": {
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
     "assets/colony-ship-yD0917jK.webp": "99d7183f27f78b2a6c07c9c6998c395846da469cb01d640115f6509d61f8c285",
@@ -7,10 +7,10 @@
     "assets/exploration-ship-mATzuElR.webp": "8b0938684f4cc1be0036dfa0dc092a3c580d7857426e4a7fa7a13bd3039fe382",
     "assets/fighter-Bc65kRMh.webp": "a9b0ea0e7e96ae1ebefc30825ff233257e1786390b5f9ca030e84af9356245bb",
     "assets/fighter-factory-2kUDiL5Y.webp": "b74e46cb565902a0516479b6d1f83d02caffc99f4b01ddd08443f196a51dc9e4",
-    "assets/index-BejiWT7j.js": "389a1660b719137539e9563299bc04960d539e0d43de4a027c9ec95f4b5d6f19",
+    "assets/index-BOFSJfWy.js": "59cc09f824d3b167a1dfe6d376538fd9d07281c7e6b2ef579ffe154aeacc4bdc",
     "assets/index-BfmoKtwd.css": "7c33c71db18d51a10ec43ed97e9ff210448245181dd119a48428cfc4b5b4a293",
     "assets/research-station-lVjq1kof.webp": "09420b15a86e4482e2c1b956ac08a3c58684435082d007b3f72b1c132d6a32cb",
-    "index.html": "320df06e6ca4c10e81c920f4b99fe91cd3b63856de1505e9956c70e4e71e1037",
+    "index.html": "168b357483b172e4392aad783b11714b7d7320ac1aa4a7f7271dfb059e0c4d80",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
