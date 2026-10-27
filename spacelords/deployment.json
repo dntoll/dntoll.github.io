@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "6f26b707395be9eddf3355a5218032f8532ac42c",
+  "sourceRevision": "444bb76c1868c2b77f3002502a53482710e028ab",
   "files": {
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
     "assets/colony-ship-yD0917jK.webp": "99d7183f27f78b2a6c07c9c6998c395846da469cb01d640115f6509d61f8c285",
@@ -7,11 +7,11 @@
     "assets/exploration-ship-mATzuElR.webp": "8b0938684f4cc1be0036dfa0dc092a3c580d7857426e4a7fa7a13bd3039fe382",
     "assets/fighter-Bc65kRMh.webp": "a9b0ea0e7e96ae1ebefc30825ff233257e1786390b5f9ca030e84af9356245bb",
     "assets/fighter-factory-2kUDiL5Y.webp": "b74e46cb565902a0516479b6d1f83d02caffc99f4b01ddd08443f196a51dc9e4",
-    "assets/index-4KuvvzVE.js": "f10eebfbd31126a01884ada2289e8840f2e91e90c1e5d931ced647027af0fb01",
-    "assets/index-BysZ14d0.css": "7ab9ca91edc77a2dcd91a31db24d88dd853a33c8572e08cfd2866ae43c532458",
+    "assets/index-BjOk7j3z.css": "dac01bab94f78c06aac3f9115782bf58d083bf266fadbb67c2939e92623d62cf",
+    "assets/index-C67WdZ-8.js": "bd67af28acb66ccfd9267799f32cce0a699b58e90a9a96c8f4cd70948931d6d6",
     "assets/plasma-star-DzzPbCSN.webp": "116a1dd92a7d9fa7ec9534943c369bf1b1ca78bd952d6ec75f53fb70155f86d1",
     "assets/research-station-lVjq1kof.webp": "09420b15a86e4482e2c1b956ac08a3c58684435082d007b3f72b1c132d6a32cb",
-    "index.html": "3a9ca02923f153428196e04e676185735620ab124aa308787b06af3f14544839",
+    "index.html": "8cafa061cb953156f62b6c2ecf5cc699df0a54f460bd4216ab81bb078c816d20",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
