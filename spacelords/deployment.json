@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "514d15207cdda859da5ef0fe558a5efbf17d7b84",
+  "sourceRevision": "1dc155ae76ea73a023e3086bcf7cd984b87f8088",
   "files": {
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
     "assets/colony-ship-factory-symbol-vNo_-LZF.webp": "a60d403fbabdc4e2af3beb36814ea285cfcca62fd16e1b9c6b9bd211f7d4bdb2",
@@ -17,8 +17,8 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
+    "assets/index-BMphaPcI.js": "28722e93a81be376b5f1e24ef8091d3a4ca7e4d1223c1556edc213d5c7c8ed5e",
     "assets/index-CQvmLHCj.css": "e6525da86c5b2f601b8a1b1a615059c92dc8b469f211818edd047383ad6dd12b",
-    "assets/index-epB-eUZb.js": "de4065890b3fe441afa36abc79c592f6924c3df4987c5303e94658c6da46f61d",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
     "assets/ocean-dome-symbol-DrZ3DeXC.webp": "4a822480fb428e4dde20ddf950d0b576c946b8d852afb6e3b3100a9f6aa45f11",
@@ -45,7 +45,7 @@
     "assets/transport-ship-factory-symbol-CpF3QjMZ.webp": "026c98214e2ee908651f2218a2ce58bdc6547b45c8bf7dbb17210deff4daba24",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "10d3c8558e72546917350b03f8dd371930332cb4f0d34fceb96d2280caa45fe4",
+    "index.html": "9d3e1b3d432062e9686bfbc78041c038dc50239e6f2fc0f4bcaa207f9b428944",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
