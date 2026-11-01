@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "f4d2d1ac69efe7a2b49f08297b3c8b850f5159ac",
+  "sourceRevision": "fa6099c4f9822f178d99689a56cd7254b6791da6",
   "files": {
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
@@ -11,6 +11,7 @@
     "assets/exploration-ship-factory-B-kuaeiB.webp": "c7a7118fca32b91233f12f5d9d2a224c1e687da783b8de4fbe17de220cf449b3",
     "assets/exploration-ship-factory-symbol-DuICJqFS.webp": "2ba5324ddca8965f681efc2a5d8aa19bc80d1e366e8dd46aaf3f28f5d5d52251",
     "assets/exploration-ship-mATzuElR.webp": "8b0938684f4cc1be0036dfa0dc092a3c580d7857426e4a7fa7a13bd3039fe382",
+    "assets/faction-sprites-DD3UlKDh.png": "89aedb0837f1378a432112789de9f54f64c63588e712c570d90c33cf7b959f31",
     "assets/fighter-Bc65kRMh.webp": "a9b0ea0e7e96ae1ebefc30825ff233257e1786390b5f9ca030e84af9356245bb",
     "assets/fighter-factory-2kUDiL5Y.webp": "b74e46cb565902a0516479b6d1f83d02caffc99f4b01ddd08443f196a51dc9e4",
     "assets/fighter-factory-symbol-BA6Qb_LG.webp": "25c9cfe6aa7c7f5a73cca327b9abc5d588b1131f3d4b03dc85ee4be603ebc244",
@@ -20,7 +21,7 @@
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
     "assets/index-CWZ2HRoS.css": "8abd8de8366cd9c4406ba5d4cd5c08f9b70539088ff48258792705c238a057b7",
-    "assets/index-nv4TXmaG.js": "6fb9e67f14fd2b505283ea6a3e06deea58a09f1d001c136d971bfb517edc82f8",
+    "assets/index-p5BtDgz8.js": "71256b5028c44c9c988c570a7a4b30f9f2e83e76c150e2725680392f47dce6c6",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
     "assets/ocean-dome-symbol-DrZ3DeXC.webp": "4a822480fb428e4dde20ddf950d0b576c946b8d852afb6e3b3100a9f6aa45f11",
@@ -48,7 +49,7 @@
     "assets/wall-tile-CiIjJaQU.png": "8ecd1316e41c9e6dea14ba857db78b39af1a6d17f6e0dca664265e516bc75e43",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "bbca0f5ce46e0e8981fb226e67c6e58eebc19ac28917448929264a590aa503eb",
+    "index.html": "85695a409ec6891cc75a8c7e97768339df71f67650150b9176aec26c9deff654",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
