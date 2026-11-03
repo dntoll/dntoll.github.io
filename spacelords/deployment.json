@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "b54ce2d1a0be8270eaa0690a3c045490182a4182",
+  "sourceRevision": "3e9b38d49b8b1bba0fdebb9cf930aee453ea7d32",
   "files": {
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
@@ -20,7 +20,7 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-BQVh2FUj.js": "8635d8e2dacbac47e4fb5fdddd416ac75c87c0986446b1bf7239aa1e040ca060",
+    "assets/index-DvOK8DXu.js": "a1c73753dedc32249c674bb5e6ace416a1e9b69ba8b463ec8939edfd2c88a2e6",
     "assets/index-I4r-1291.css": "07b15d54b2d24f3d54730ebc566e72269543031dde2c7eabf45cecb30568de55",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
@@ -49,7 +49,7 @@
     "assets/wall-tile-CiIjJaQU.png": "8ecd1316e41c9e6dea14ba857db78b39af1a6d17f6e0dca664265e516bc75e43",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "da71b7a4bd01ea2f8b6e1691179406cdac61ac02d216867305eb701ac5c43e11",
+    "index.html": "3c7963bd97a4603dff974b21f2c20ba6607622807bff19f478c0abafad43dcf5",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
