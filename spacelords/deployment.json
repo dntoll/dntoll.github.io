@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "3e9b38d49b8b1bba0fdebb9cf930aee453ea7d32",
+  "sourceRevision": "e3dbdf0e2a3bf25328190bd6a74e17bd559e8114",
   "files": {
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
@@ -20,7 +20,7 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-DvOK8DXu.js": "a1c73753dedc32249c674bb5e6ace416a1e9b69ba8b463ec8939edfd2c88a2e6",
+    "assets/index-DZE9Qmd7.js": "b63fc4ac3e7b3a8dd7aca099bee3f00cd5871f3a995d21f9a5796dcc2b1c304c",
     "assets/index-I4r-1291.css": "07b15d54b2d24f3d54730ebc566e72269543031dde2c7eabf45cecb30568de55",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
@@ -32,6 +32,8 @@
     "assets/orbital-shipyard-symbol-azUcyaiR.webp": "e83aa38974ead256bba1a34ce726f99e25520b7aa7fe215ecc70da1173076999",
     "assets/pirate-ship-6UFusmMg.webp": "5fd0d68f38147ec9b151a249069cfbf3af46c2e53c9a225382c95d9c015256ef",
     "assets/plasma-star-DzzPbCSN.webp": "116a1dd92a7d9fa7ec9534943c369bf1b1ca78bd952d6ec75f53fb70155f86d1",
+    "assets/raptor-CNPPYOFZ.webp": "15803aa6c7bb67430ab7d0b71ac050bb321de2b30f06c66a8c3b7493a1615479",
+    "assets/raptor-factory-symbol-CIS8DUJv.webp": "141462bbebae6b4191b62d0e43646813680f2ba0aac18dff0965770aeb382b7a",
     "assets/research-station-lVjq1kof.webp": "09420b15a86e4482e2c1b956ac08a3c58684435082d007b3f72b1c132d6a32cb",
     "assets/research-station-symbol-D3xK7quJ.webp": "d8cc8955cfd3f5b56092124b65e4ad946825472f8c75ee7e6f66975c0178f286",
     "assets/rocket-engine-factory-symbol-Bau7SKyJ.webp": "3d20e254b4c6cc84db8265531120852c39c5686df6d3cbc1bb012b5d51e496d7",
@@ -49,7 +51,7 @@
     "assets/wall-tile-CiIjJaQU.png": "8ecd1316e41c9e6dea14ba857db78b39af1a6d17f6e0dca664265e516bc75e43",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "3c7963bd97a4603dff974b21f2c20ba6607622807bff19f478c0abafad43dcf5",
+    "index.html": "ac968740047b1e819a9b02f8fc7f40f53f1d89bf8a9ade309c47ff68b963e278",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
