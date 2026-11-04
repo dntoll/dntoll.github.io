@@ -1,6 +1,7 @@
 {
-  "sourceRevision": "23b2ebbc46ce79c327f2303032c0e19a9491a0f0",
+  "sourceRevision": "70d0ee8433dac4975aa686e07f077bfec169c883",
   "files": {
+    "assets/airlock-C6eZM44E.webp": "33379363f5635cfe5e5bd4f66db6cbb28c9f4ad493565e2ac2e9c4c4f582a066",
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
     "assets/colony-ship-factory-symbol-vNo_-LZF.webp": "a60d403fbabdc4e2af3beb36814ea285cfcca62fd16e1b9c6b9bd211f7d4bdb2",
@@ -9,6 +10,8 @@
     "assets/desert-planet-DXDKavcL.webp": "9496efb90bf06fd2fd069adde820d3648ff93d33d5cbd3d97e2778cd9728d9c3",
     "assets/desert-terraforming-factory-symbol-C7Vc1ZM9.webp": "58b64af8313dd64a8505c46b973abb9e4d2ec61ee9654ff1dd43c9a8c7d2fedf",
     "assets/docking-corridor-CjO2yfE5.webp": "58bf3b7b141b74db887f3898384d22dfa2a272d3d25c555f5f8bfd54984aa440",
+    "assets/door-closed-q-CiOthBYt.webp": "fc82bcb06fc09fca538788373473129c8bff8dbed2444e9344c3258ee58be851",
+    "assets/door-closed-r-B_VDsAAe.webp": "8d04f6cc7f57acad083f1fd576ee1ffe2f5e613761a8e752bdb8fc6f7b3ce42c",
     "assets/exploration-ship-factory-B-kuaeiB.webp": "c7a7118fca32b91233f12f5d9d2a224c1e687da783b8de4fbe17de220cf449b3",
     "assets/exploration-ship-factory-symbol-DuICJqFS.webp": "2ba5324ddca8965f681efc2a5d8aa19bc80d1e366e8dd46aaf3f28f5d5d52251",
     "assets/exploration-ship-mATzuElR.webp": "8b0938684f4cc1be0036dfa0dc092a3c580d7857426e4a7fa7a13bd3039fe382",
@@ -18,10 +21,11 @@
     "assets/fighter-factory-symbol-BA6Qb_LG.webp": "25c9cfe6aa7c7f5a73cca327b9abc5d588b1131f3d4b03dc85ee4be603ebc244",
     "assets/floor-tile-BeCeo7Eb.png": "a98846be42eb7cef4165b2a2abf3de29f25f8c08bd499c94f3f40d0f4fa1b8da",
     "assets/gas-planet-BvqzshRL.webp": "9d2702ddb0cc666c5ff52640935181e1444183c3c19c465c5cfc1c99387bc0cc",
+    "assets/half-cover-CmMvbqwH.webp": "b3d57b508badb1dac52ba9c509b885ad867253c9ba2fe687002e8102593dde29",
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-D4jhfs3d.js": "4bf1f1b74904a0c699728783185ecbc245d5af9033551efdc848df7bc796ffb5",
+    "assets/index-CKSeTD39.js": "15d136fefb596bcdf1fd6187c1e597d9b48753558a1a99efe3057de0c0ce6912",
     "assets/index-I4r-1291.css": "07b15d54b2d24f3d54730ebc566e72269543031dde2c7eabf45cecb30568de55",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
@@ -35,6 +39,7 @@
     "assets/plasma-star-DzzPbCSN.webp": "116a1dd92a7d9fa7ec9534943c369bf1b1ca78bd952d6ec75f53fb70155f86d1",
     "assets/raptor-CNPPYOFZ.webp": "15803aa6c7bb67430ab7d0b71ac050bb321de2b30f06c66a8c3b7493a1615479",
     "assets/raptor-factory-symbol-CIS8DUJv.webp": "141462bbebae6b4191b62d0e43646813680f2ba0aac18dff0965770aeb382b7a",
+    "assets/reactor-BhrKM8zQ.webp": "bd6e3239955cf89901de1a5270632382848bc8db26d6b41e989a8e6c78ae3285",
     "assets/research-station-lVjq1kof.webp": "09420b15a86e4482e2c1b956ac08a3c58684435082d007b3f72b1c132d6a32cb",
     "assets/research-station-symbol-D3xK7quJ.webp": "d8cc8955cfd3f5b56092124b65e4ad946825472f8c75ee7e6f66975c0178f286",
     "assets/rocket-engine-factory-symbol-Bau7SKyJ.webp": "3d20e254b4c6cc84db8265531120852c39c5686df6d3cbc1bb012b5d51e496d7",
@@ -52,7 +57,7 @@
     "assets/wall-tile-CiIjJaQU.png": "8ecd1316e41c9e6dea14ba857db78b39af1a6d17f6e0dca664265e516bc75e43",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "3cce64cbc7b706ce49350306c1fb8a5e056aeeee51d80c51f3ea6da5d05d47a8",
+    "index.html": "6466499f4eae2812d17da4a39ad8f303cdac718073f50ece1d6c0b2e43bffec9",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
