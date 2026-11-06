@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "7bbaa9ad5a680653507363d210ce80ad4269726d",
+  "sourceRevision": "2a856d3e9bc7dae7e540c1f41ad4451e02e124ce",
   "files": {
     "assets/airlock-D9r3KowW.webp": "1e0fb19a1e48271b3ebb29efecaffeafd0854aab321294cf3c5133391bb1f538",
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
@@ -9,6 +9,7 @@
     "assets/desert-dome-symbol-BsPtQbVU.webp": "74a34e5228aacf6c1187e7e28a13ab02dcce97289cd2aae2b71f5c121cf67f8f",
     "assets/desert-planet-DXDKavcL.webp": "9496efb90bf06fd2fd069adde820d3648ff93d33d5cbd3d97e2778cd9728d9c3",
     "assets/desert-terraforming-factory-symbol-C7Vc1ZM9.webp": "58b64af8313dd64a8505c46b973abb9e4d2ec61ee9654ff1dd43c9a8c7d2fedf",
+    "assets/directional-faction-sprites-DTqNoBkg.webp": "abfa64522bd3bf6d8c7ed9b25b3675a81adc87275373957577a1033d0d1462e1",
     "assets/docking-corridor-CjO2yfE5.webp": "58bf3b7b141b74db887f3898384d22dfa2a272d3d25c555f5f8bfd54984aa440",
     "assets/door-closed-q-DQjApZeJ.webp": "9a49d40d0f30bd337cdc7ff69ac24e12707b1089aad53f5cdb34a4def2062941",
     "assets/door-closed-r-Bn_az0T8.webp": "01bb06a7db00428abc6d8fedb781e9e18fe3ecbfde2e47acdd284bf6e6d8b1e9",
@@ -17,7 +18,6 @@
     "assets/exploration-ship-factory-B-kuaeiB.webp": "c7a7118fca32b91233f12f5d9d2a224c1e687da783b8de4fbe17de220cf449b3",
     "assets/exploration-ship-factory-symbol-DuICJqFS.webp": "2ba5324ddca8965f681efc2a5d8aa19bc80d1e366e8dd46aaf3f28f5d5d52251",
     "assets/exploration-ship-mATzuElR.webp": "8b0938684f4cc1be0036dfa0dc092a3c580d7857426e4a7fa7a13bd3039fe382",
-    "assets/faction-sprites-DD3UlKDh.png": "89aedb0837f1378a432112789de9f54f64c63588e712c570d90c33cf7b959f31",
     "assets/fighter-Bc65kRMh.webp": "a9b0ea0e7e96ae1ebefc30825ff233257e1786390b5f9ca030e84af9356245bb",
     "assets/fighter-factory-2kUDiL5Y.webp": "b74e46cb565902a0516479b6d1f83d02caffc99f4b01ddd08443f196a51dc9e4",
     "assets/fighter-factory-symbol-BA6Qb_LG.webp": "25c9cfe6aa7c7f5a73cca327b9abc5d588b1131f3d4b03dc85ee4be603ebc244",
@@ -27,7 +27,7 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-Bedu9yjy.js": "9bf9c427a5235ea15cd11e5fd4b0c5cd52fe693b2c690e24c0e273dc9b3834e8",
+    "assets/index-CzbcW6_B.js": "c5911d1828cc9dbdbcc89ccde43652c1b453f8999b845a96ff8510c017bb4eaf",
     "assets/index-I4r-1291.css": "07b15d54b2d24f3d54730ebc566e72269543031dde2c7eabf45cecb30568de55",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
@@ -59,7 +59,7 @@
     "assets/wall-tile-CiIjJaQU.png": "8ecd1316e41c9e6dea14ba857db78b39af1a6d17f6e0dca664265e516bc75e43",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "01aa2fe8e29d95b06e90ee0c67f9bc490397fb6ca7b96aa23aa5aaa1f2357d77",
+    "index.html": "4c90063cc22ef443bc083f70608843ff3952b5aa257cb43db6b955a8f13b8772",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
