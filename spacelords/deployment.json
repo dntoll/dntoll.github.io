@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "2f2c68b2cd68fad6637a56e9deb90473d1a8cafc",
+  "sourceRevision": "b2f9cc68980eb956926e44418dad691c0babd3b6",
   "files": {
     "assets/airlock-D9r3KowW.webp": "1e0fb19a1e48271b3ebb29efecaffeafd0854aab321294cf3c5133391bb1f538",
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
@@ -9,7 +9,7 @@
     "assets/desert-dome-symbol-BsPtQbVU.webp": "74a34e5228aacf6c1187e7e28a13ab02dcce97289cd2aae2b71f5c121cf67f8f",
     "assets/desert-planet-DXDKavcL.webp": "9496efb90bf06fd2fd069adde820d3648ff93d33d5cbd3d97e2778cd9728d9c3",
     "assets/desert-terraforming-factory-symbol-C7Vc1ZM9.webp": "58b64af8313dd64a8505c46b973abb9e4d2ec61ee9654ff1dd43c9a8c7d2fedf",
-    "assets/directional-faction-sprites-DTqNoBkg.webp": "abfa64522bd3bf6d8c7ed9b25b3675a81adc87275373957577a1033d0d1462e1",
+    "assets/directional-faction-sprites-bULdG8RL.webp": "f463c69af1d3dcf3f222670c37b0ba8c08de1ae45e20d23af5ac7e1ba52adf1a",
     "assets/docking-corridor-CjO2yfE5.webp": "58bf3b7b141b74db887f3898384d22dfa2a272d3d25c555f5f8bfd54984aa440",
     "assets/door-closed-q-DQjApZeJ.webp": "9a49d40d0f30bd337cdc7ff69ac24e12707b1089aad53f5cdb34a4def2062941",
     "assets/door-closed-r-Bn_az0T8.webp": "01bb06a7db00428abc6d8fedb781e9e18fe3ecbfde2e47acdd284bf6e6d8b1e9",
@@ -27,7 +27,7 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-BhO7rxM9.js": "2df8bbf9355079fcc61cfbe4c5c940478bb5a1f21443794dd96bf7339101a650",
+    "assets/index-Bk7eVcNv.js": "ec7fdbb2e5446fcd5b7a4baaf0274c6081d18ea0668f78f8be76334c9a2a3e05",
     "assets/index-I4r-1291.css": "07b15d54b2d24f3d54730ebc566e72269543031dde2c7eabf45cecb30568de55",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
@@ -59,7 +59,7 @@
     "assets/wall-tile-CiIjJaQU.png": "8ecd1316e41c9e6dea14ba857db78b39af1a6d17f6e0dca664265e516bc75e43",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "c06441e63bd8e10f097d0ed4750915ef2e095b26eb35cf450e6597b924d6dbf9",
+    "index.html": "03af12936457c43b739939af0116695d315bb9ae993d20e0adfaee7f762d4ae4",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
