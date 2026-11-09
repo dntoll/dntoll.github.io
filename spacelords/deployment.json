@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "a676b0b2b8b03be7c43cbfbdbf93187afb4349b9",
+  "sourceRevision": "05703aec4f24bfeb5d93983d7e7e71609f7d556d",
   "files": {
     "assets/airlock-D9r3KowW.webp": "1e0fb19a1e48271b3ebb29efecaffeafd0854aab321294cf3c5133391bb1f538",
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
@@ -27,8 +27,8 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
+    "assets/index-B2qd53fS.js": "661201c60a411689a9595ee2b7ce29b199b1b53c404b253d2deabd52f187cb26",
     "assets/index-BlMGOd9o.css": "08a35ac95e2a5eb28a4bb5ca854710084dfd7e541aaddbacde57135da34168d2",
-    "assets/index-QBk6CFB-.js": "0889a170e2f221a478e1a8ca810c4774dc319e8281a787eaf0676e4d728a1e72",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
     "assets/ocean-dome-symbol-DrZ3DeXC.webp": "4a822480fb428e4dde20ddf950d0b576c946b8d852afb6e3b3100a9f6aa45f11",
@@ -59,7 +59,7 @@
     "assets/wall-tile-BhikcebP.png": "065d365213738fc2f3d6c4bde6710cf3ea882860ddc1067f9fa54e264ee6cc7a",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "067eeb86058db8cc724f135fa0ca8e580328dfe3bc706f7451f3f9cad1951330",
+    "index.html": "100ee2935f7d5afe50c8fd792a93dc87ed4b28a7c872d23b1e0fead90624b84b",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
