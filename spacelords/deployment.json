@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "1a0c4dba9c94c497dbfef260cc650678d678b5dd",
+  "sourceRevision": "9c1d6b881fa6dca9b831280ac632dc478b0556e7",
   "files": {
     "assets/airlock-D9r3KowW.webp": "1e0fb19a1e48271b3ebb29efecaffeafd0854aab321294cf3c5133391bb1f538",
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
@@ -27,8 +27,8 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-CxPJCE4Y.css": "28aa8437b6298dd6f7995725172369b1e2872dfea84260426a5854efe19237b6",
-    "assets/index-DajPlUQ-.js": "f46647aa1161c498a2d7c009ae6070aa2e9b426fd4ed81988434c439409366e0",
+    "assets/index-Br-LhoIz.js": "cffe8147cbb59ea295f5ac712d0bb30f37badbd217f81a0900c9c22cb8278eac",
+    "assets/index-mYiIEomg.css": "6d32038fc4e007f813551eb079d0ff40423c1121bf3d9054b89d1eb3a8ab40d0",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
     "assets/ocean-dome-symbol-DrZ3DeXC.webp": "4a822480fb428e4dde20ddf950d0b576c946b8d852afb6e3b3100a9f6aa45f11",
@@ -59,7 +59,7 @@
     "assets/wall-tile-BhikcebP.png": "065d365213738fc2f3d6c4bde6710cf3ea882860ddc1067f9fa54e264ee6cc7a",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "168745e9d6308f7a6937f3113586d20ce3d1d61c70ea6b82b0b116ecb458f9bf",
+    "index.html": "2b627c969e2942476d2d18f0f4d3144d1000b19671f23b39cc4f172a5eb2d7da",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
