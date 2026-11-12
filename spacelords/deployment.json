@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "d414af512df6fd44b4c605e5fb87f8241aba59fa",
+  "sourceRevision": "cf7f4fc0ea62910282d4f53bcd0cedd692268ecf",
   "files": {
     "assets/airlock-D9r3KowW.webp": "1e0fb19a1e48271b3ebb29efecaffeafd0854aab321294cf3c5133391bb1f538",
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
@@ -21,14 +21,17 @@
     "assets/fighter-Bc65kRMh.webp": "a9b0ea0e7e96ae1ebefc30825ff233257e1786390b5f9ca030e84af9356245bb",
     "assets/fighter-factory-2kUDiL5Y.webp": "b74e46cb565902a0516479b6d1f83d02caffc99f4b01ddd08443f196a51dc9e4",
     "assets/fighter-factory-symbol-BA6Qb_LG.webp": "25c9cfe6aa7c7f5a73cca327b9abc5d588b1131f3d4b03dc85ee4be603ebc244",
+    "assets/floor-bridge-iOLepMlT.webp": "11372522007a30e8cbb537afb6ccee5dc4209a4a6db45d5a40f046cea0150ec2",
+    "assets/floor-cockpit-CR_hjiyS.webp": "76441477dd23f599913333494bc94d2f0639a2dd47a7a1f8a2d223fcea7dd21f",
+    "assets/floor-engineering-CzmaAI_i.webp": "29cc290962c53f1c9810e720504ca06975820228efd21cf75244fc36dfcd2215",
     "assets/floor-tile-BeCeo7Eb.png": "a98846be42eb7cef4165b2a2abf3de29f25f8c08bd499c94f3f40d0f4fa1b8da",
     "assets/gas-planet-BvqzshRL.webp": "9d2702ddb0cc666c5ff52640935181e1444183c3c19c465c5cfc1c99387bc0cc",
     "assets/half-cover-1pUKX9E2.webp": "6f0b3346ac026ee66d880a7e942ed3aaf337e587ba65c4372ca8febc39c528b7",
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-Bkmd-z8b.js": "212e6054775729c203dd7445a499278ae2cbf1cd52b5a6e043f8fb5fd163a605",
-    "assets/index-cwi23AiF.css": "41671dda478a5689a13541d7cf2c6092cf5530352097b1bbaafa6cdc579fdee1",
+    "assets/index-BnNCs-GX.css": "4b1e5058a64c6236a1993d21f97ea517987cd429d2951982c6cd290e18762a25",
+    "assets/index-CmkQ4uAr.js": "4637a5347a73f2d5773e5ef7ab8ced047618d098600d5dbf94d5cfd4301cffce",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
     "assets/ocean-dome-symbol-DrZ3DeXC.webp": "4a822480fb428e4dde20ddf950d0b576c946b8d852afb6e3b3100a9f6aa45f11",
@@ -56,10 +59,14 @@
     "assets/toxic-terraforming-factory-symbol-RZjtT_yq.webp": "04f37d0e635c8f3ca674d68966664f1fec2c74be64d11698e1f6468970f44595",
     "assets/transport-ship-C3OCuLhX.webp": "585e9e6c7fcae9c10c99b10cc8a808042a74e0196121eff130897d6bb7e7dddd",
     "assets/transport-ship-factory-symbol-CpF3QjMZ.webp": "026c98214e2ee908651f2218a2ce58bdc6547b45c8bf7dbb17210deff4daba24",
+    "assets/wall-bridge-Bhl-j35_.webp": "4341dd8a77e940a3d846531d3a6237a6ed25aa02a938eaa68a87afa567edfb81",
+    "assets/wall-cockpit-_0rOfaxq.webp": "473badf5fbc12f08fa05c59cd7ba2676aa608cc12c112050bf727eff654f128e",
+    "assets/wall-engineering-BkM9HZyL.webp": "463e8d429380a9f12a182b54e401704a717929308deb4a9247a5c359324af0e0",
     "assets/wall-tile-BhikcebP.png": "065d365213738fc2f3d6c4bde6710cf3ea882860ddc1067f9fa54e264ee6cc7a",
+    "assets/wall-top-JWxwQSFK.webp": "f25e5ad9621b4b75b87624556fef18241f97b69f42ce9789367efbc3f5aca538",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "f279ada1b86b1a7705a199ae342018daad9c9a0125ca8894e2aa322abcd2fad3",
+    "index.html": "0c86061b21055dee792b6f5402f4799fb897dd10fcabe3ad12dff8ae1403ffd2",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
