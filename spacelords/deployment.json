@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "8ae9d4e797297a9d4f11bc935fe1003aa72c9e5d",
+  "sourceRevision": "e97baacfed2ca387a3ff54ea8ebd5e5c8ed54014",
   "files": {
     "assets/actions-distinct-v3-D-SQbBGs.png": "2ed9bef14c7aee10cfbd5d33a86e6ddee9110471771aeb3ff3c060c35993020e",
     "assets/airlock-D9r3KowW.webp": "1e0fb19a1e48271b3ebb29efecaffeafd0854aab321294cf3c5133391bb1f538",
@@ -7,10 +7,11 @@
     "assets/colony-ship-factory-BKHe2HQF.webp": "9bde7d20641eec3a96bc2eab4eaf933e0b1c31ff581221e42a2ff7b3711c1b23",
     "assets/colony-ship-factory-symbol-vNo_-LZF.webp": "a60d403fbabdc4e2af3beb36814ea285cfcca62fd16e1b9c6b9bd211f7d4bdb2",
     "assets/colony-ship-yD0917jK.webp": "99d7183f27f78b2a6c07c9c6998c395846da469cb01d640115f6509d61f8c285",
+    "assets/crate-Nn71YSC1.webp": "bbfe0637b1e064abb485096af76f5fbfdc5e6bacebd8ffb8d20b72e067099d2a",
     "assets/desert-dome-symbol-BsPtQbVU.webp": "74a34e5228aacf6c1187e7e28a13ab02dcce97289cd2aae2b71f5c121cf67f8f",
     "assets/desert-planet-DXDKavcL.webp": "9496efb90bf06fd2fd069adde820d3648ff93d33d5cbd3d97e2778cd9728d9c3",
     "assets/desert-terraforming-factory-symbol-C7Vc1ZM9.webp": "58b64af8313dd64a8505c46b973abb9e4d2ec61ee9654ff1dd43c9a8c7d2fedf",
-    "assets/directional-faction-sprites-bULdG8RL.webp": "f463c69af1d3dcf3f222670c37b0ba8c08de1ae45e20d23af5ac7e1ba52adf1a",
+    "assets/directional-faction-sprites-BPUSNyKt.webp": "70d5f55e7a5d66c34dc1e020a8217bec738efe95ec49b7028ebe87153eaf01c1",
     "assets/docking-corridor-CjO2yfE5.webp": "58bf3b7b141b74db887f3898384d22dfa2a272d3d25c555f5f8bfd54984aa440",
     "assets/door-closed-q-DQjApZeJ.webp": "9a49d40d0f30bd337cdc7ff69ac24e12707b1089aad53f5cdb34a4def2062941",
     "assets/door-closed-r-Bn_az0T8.webp": "01bb06a7db00428abc6d8fedb781e9e18fe3ecbfde2e47acdd284bf6e6d8b1e9",
@@ -27,11 +28,10 @@
     "assets/floor-engineering-CzmaAI_i.webp": "29cc290962c53f1c9810e720504ca06975820228efd21cf75244fc36dfcd2215",
     "assets/floor-tile-BeCeo7Eb.png": "a98846be42eb7cef4165b2a2abf3de29f25f8c08bd499c94f3f40d0f4fa1b8da",
     "assets/gas-planet-BvqzshRL.webp": "9d2702ddb0cc666c5ff52640935181e1444183c3c19c465c5cfc1c99387bc0cc",
-    "assets/half-cover-1pUKX9E2.webp": "6f0b3346ac026ee66d880a7e942ed3aaf337e587ba65c4372ca8febc39c528b7",
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-B2uFiviR.js": "b5704defb56cd78ef4550ece7a0c715384101ae5be70ec9f2ad64ddd285cb26d",
+    "assets/index-B3Cmrws_.js": "2f77257f8a3efa94754b84a072244ef2fe40ac11d6abac3ac3d7d4a995a89fde",
     "assets/index-CBck6Yem.css": "add3a40d622a91a9ae8a306f96ce23743292625b94cbf378a4cee3ab4b3f9535",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
@@ -45,7 +45,7 @@
     "assets/plasma-star-DzzPbCSN.webp": "116a1dd92a7d9fa7ec9534943c369bf1b1ca78bd952d6ec75f53fb70155f86d1",
     "assets/raptor-CNPPYOFZ.webp": "15803aa6c7bb67430ab7d0b71ac050bb321de2b30f06c66a8c3b7493a1615479",
     "assets/raptor-factory-symbol-CIS8DUJv.webp": "141462bbebae6b4191b62d0e43646813680f2ba0aac18dff0965770aeb382b7a",
-    "assets/reactor-D5SFbF45.webp": "5b2f094e7d9daf401044f98837f9084cb9f1fc9d33ee49e62c847d1b29ab73e5",
+    "assets/reactor-B9AxL2Ua.webp": "b490247e3b9f3cb12bda79df6879ac97545920014927bfbe909dcc87df564f11",
     "assets/research-station-lVjq1kof.webp": "09420b15a86e4482e2c1b956ac08a3c58684435082d007b3f72b1c132d6a32cb",
     "assets/research-station-symbol-D3xK7quJ.webp": "d8cc8955cfd3f5b56092124b65e4ad946825472f8c75ee7e6f66975c0178f286",
     "assets/rocket-engine-factory-symbol-Bau7SKyJ.webp": "3d20e254b4c6cc84db8265531120852c39c5686df6d3cbc1bb012b5d51e496d7",
@@ -70,7 +70,7 @@
     "assets/wall-top-JWxwQSFK.webp": "f25e5ad9621b4b75b87624556fef18241f97b69f42ce9789367efbc3f5aca538",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "2d78489a8bf6813656c47266d093f41e4ea37cdb34b657aae9fe4234bbbb3f1f",
+    "index.html": "4453f4b1729d44ca738faea4f1ad6f88b92e192bd8da8e218d89e478b5afe04d",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
