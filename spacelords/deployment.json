@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "bfd2dbaae44f1fb3ed05c9516eba28b478e8f6b5",
+  "sourceRevision": "a7b7523d414de09079a2c449f77f94c9f7266342",
   "files": {
     "assets/actions-distinct-v3-D-SQbBGs.png": "2ed9bef14c7aee10cfbd5d33a86e6ddee9110471771aeb3ff3c060c35993020e",
     "assets/airlock-D9r3KowW.webp": "1e0fb19a1e48271b3ebb29efecaffeafd0854aab321294cf3c5133391bb1f538",
@@ -31,7 +31,7 @@
     "assets/ice-dome-symbol-CgREh2JU.webp": "de06dc1e7757d4e07376cab1bba7bf0bb3082e2521bae49b8e27ca1dde2dbed1",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
     "assets/ice-terraforming-factory-symbol-vIQHqG0R.webp": "d0c4be7313b95863c8d1300d68ad4e09357f428cdfd96bf64013fb6f40931cf4",
-    "assets/index-4yIudsgD.js": "ccb8d0ee570f6d536d2c5c5147d9cf067a4e97084a95b08862ac7d0cc2cc7051",
+    "assets/index-BwuotjO5.js": "68617867ddead108d662d65c7b500bb92f3f8708fb1614c25f962a13a144bdc8",
     "assets/index-CBck6Yem.css": "add3a40d622a91a9ae8a306f96ce23743292625b94cbf378a4cee3ab4b3f9535",
     "assets/ion-pulse-engine-factory-symbol-CFxslflz.webp": "1970c4d387ebc7568dbaaed2913164e4203a11bb25ba5c81c206a35c8d26e91a",
     "assets/iron-mine-symbol-ntPLTplK.webp": "77c9d01041a9390e03edd371ad5ab70d7daac1873a5d00834ccef56f75028b9d",
@@ -70,7 +70,7 @@
     "assets/wall-top-JWxwQSFK.webp": "f25e5ad9621b4b75b87624556fef18241f97b69f42ce9789367efbc3f5aca538",
     "assets/water-extractor-symbol-C04cXnfp.webp": "4160c74f6f7eb4b4995fe578443eb3948b10e7e84b468a35538b4d2f5c007caf",
     "assets/weapons-module-factory-symbol-RKuU2fdj.webp": "d2c6ad902a95dae49f02bf9a6a30681db987b784679673760c135b5b92b005ca",
-    "index.html": "def8e461f37c83626066eeb04490314780c1d78a2da4618676688d65dbd8d055",
+    "index.html": "47284835cd716ba84c59d6c66ef2b2da50658cac41b14c89ca22f9ca6c609eb7",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
