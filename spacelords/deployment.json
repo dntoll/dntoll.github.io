@@ -1,9 +1,10 @@
 {
-  "sourceRevision": "4445f17c2e3df927851762b04f6b6bc725d96058",
+  "sourceRevision": "fb7e8f52e37fc413bc55e813a2a6c851073c14d2",
   "branch": "single_fleet",
   "files": {
     "assets/actions-distinct-v4-DkbdpPuU.png": "2c7264579f565de16afdcf1b3380f36501f2672852ff2ab6ac6a8baf4ba1dab5",
     "assets/breach-NUtzJQXg.webp": "c3aaa3dc71a6bc73f78e749b57ac21e3221df04ef916b4e68cb33841542862fa",
+    "assets/cannon-illustration-BxulMZOL.png": "a251ceabf74f225666a0d16115603c7a0d56e5c614990d3fc890caa296fe8fe7",
     "assets/civilian-shuttle-2iMNRcmC.webp": "f74b9440e3078f5eb262d258ed78f41ad2cad97c112083df6ca65dd15448fb84",
     "assets/civilian-shuttle-boarding-hd-dLaAz-Se.webp": "09a9ba19d6d7044f04f83dbafa2d38d017501e06764d9a1fafd31802a08173bd",
     "assets/colony-ship-boarding-hd-D35StuI4.webp": "673c787eab3f207c90e477b5eb3d8f86bad26a4a34043099b5be38e3ec477de9",
@@ -31,13 +32,16 @@
     "assets/floor-tile-BeCeo7Eb.png": "a98846be42eb7cef4165b2a2abf3de29f25f8c08bd499c94f3f40d0f4fa1b8da",
     "assets/gas-planet-BvqzshRL.webp": "9d2702ddb0cc666c5ff52640935181e1444183c3c19c465c5cfc1c99387bc0cc",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
-    "assets/index-C03BxZfE.css": "4676a88cb945ceba4979176c4a83e56b53559f7b02201dd8e0076c576298158f",
-    "assets/index-DaQ0M-bx.js": "dcbf2f6b74bfe615fd57ea6c8ccac8efff47fcb597405e54f75be26c71e0933b",
+    "assets/index-B2MjaLbC.css": "4b7f6704898364c441bd153de1ac831596c9fb4e0d42ff5154bcd479973b8fdd",
+    "assets/index-BRZAdLL-.js": "62c6da6d3fd09a7e5cb82422d170c8879cb0e475a11eaec27a2c57f2207388aa",
     "assets/ion-pulse-engine-CtwWNIlN.png": "73eb7add71905cc989d030ff7f578afa7a573f81831dd8abc434ab52a68f2ccf",
+    "assets/light-cannon-illustration-Cv44iBMU.png": "b9c14b4939a543ccabccab4a0d39fe660e96af16df8ec192f1e3e23981faf367",
+    "assets/missiles-illustration-CnXn7lUh.png": "52f23d398401549988443f0f81ba9905e931195152fc408b1ee9987438c98ab4",
     "assets/ocean-planet-Cz-pnixo.webp": "eb78ac90b5dec251638cefb100889f5d599cfecbfb3614f120f3dbc92798cdf6",
     "assets/pirate-ship-6UFusmMg.webp": "5fd0d68f38147ec9b151a249069cfbf3af46c2e53c9a225382c95d9c015256ef",
     "assets/pirate-ship-boarding-hd-CiHeHI8b.webp": "2fb7edbcf70f773c17ea74a23518075a3f32be61503a1244450ef2987d357cf5",
     "assets/plasma-star-DzzPbCSN.webp": "116a1dd92a7d9fa7ec9534943c369bf1b1ca78bd952d6ec75f53fb70155f86d1",
+    "assets/raider-cannon-illustration-CRW4_Hpd.png": "525b4062a970eea1e346ce47d6543b400336e25703725a83206bc46cf3315b76",
     "assets/raptor-boarding-hd-BaooCHjn.webp": "1a8effdb8d55c81cc3ffceba5a7a02a9d1692648dd2e379ff6fdd0e507d26c54",
     "assets/raptor-x29DCkv2.webp": "070b1027f700c0082c3b2ca87d26f0786e6218ffa9834d7b7b519f49b80474c7",
     "assets/reactor-DTrlUmdf.webp": "3abdab050331c51b8e08d4bc2a58b1d241a45c60c3bce6eea172408c4340d236",
@@ -57,7 +61,7 @@
     "assets/wall-galley-BXZz_CJh.webp": "5982c9d9e27656a2280e5f88ca637d499f4c3f67bed0973abcb37be865f8c4b3",
     "assets/wall-tile-BhikcebP.png": "065d365213738fc2f3d6c4bde6710cf3ea882860ddc1067f9fa54e264ee6cc7a",
     "assets/wall-top-JWxwQSFK.webp": "f25e5ad9621b4b75b87624556fef18241f97b69f42ce9789367efbc3f5aca538",
-    "index.html": "6a8204b3960f475953e5448e2d533d0b3f3cb16dd6db5efbe4f71ab3482259bf",
+    "index.html": "670e50bcbcaae03df455fd4140a28fd3e5e927e807b7b51fdf6d65a72c94370c",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
