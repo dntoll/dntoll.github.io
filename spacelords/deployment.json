@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "ec1b51e1ef626730238b30eed9a00cb3bd0c1c0b",
+  "sourceRevision": "53d17edc3ede2b158286cb73e592a5584b8b6a2c",
   "branch": "single_fleet",
   "files": {
     "assets/actions-distinct-v4-DkbdpPuU.png": "2c7264579f565de16afdcf1b3380f36501f2672852ff2ab6ac6a8baf4ba1dab5",
@@ -13,6 +13,7 @@
     "assets/cover-cockpit-top-YOfkba0Z.webp": "cbaa74119edc557a2b832f713958fa7554b848a62f70bf036a5bd48d8780b9f6",
     "assets/cover-engineering-side-Cj8f0uwx.webp": "c4c08af2e12f8d65a7297aa2dc6c214802db2ec1bb6ba7cde7b33141a611742e",
     "assets/cover-engineering-top-DVxl2Z5I.webp": "8182df723c3c912fea63a778b46834cad582c6842e050717c68cd0a2ac24253b",
+    "assets/crew-portraits-Cqk5Yufa.png": "e641316c3cc2745471e7b391fd48f487ab55efbb0a62737485110d084d0c59af",
     "assets/desert-planet-DXDKavcL.webp": "9496efb90bf06fd2fd069adde820d3648ff93d33d5cbd3d97e2778cd9728d9c3",
     "assets/directional-faction-sprites-2-D-ChcDi3.webp": "900500a4c1dc7841c17cc08d7ac9c774321f0cfc0a908dca85a44f9e2a473cf1",
     "assets/directional-faction-sprites-3-D5D6f9Wj.webp": "87f9c53cc06d2526c8b8e8666b91100c0ebfab2cbcc3059a68403463bad21cfd",
@@ -23,7 +24,6 @@
     "assets/escape-pod-C6F8yxrw.webp": "a7564c822ab23cc85abada733661222571dfe03a9211d341831aab8a1a13936f",
     "assets/exploration-ship-boarding-hd-C9XmXYxD.webp": "fd3e82dc45b24c7dcab47198029fad8d803a9d5cc84895eec38ae016ec1523ce",
     "assets/exploration-ship-mATzuElR.webp": "8b0938684f4cc1be0036dfa0dc092a3c580d7857426e4a7fa7a13bd3039fe382",
-    "assets/faction-sprites-DD3UlKDh.png": "89aedb0837f1378a432112789de9f54f64c63588e712c570d90c33cf7b959f31",
     "assets/fighter-Bc65kRMh.webp": "a9b0ea0e7e96ae1ebefc30825ff233257e1786390b5f9ca030e84af9356245bb",
     "assets/fighter-boarding-hd-ClrwOvjI.webp": "0707d4670b15ef8105ad4a43cf9fd5d2d8b8e9b33357fbd32861517e2596688d",
     "assets/floor-bridge-iOLepMlT.webp": "11372522007a30e8cbb537afb6ccee5dc4209a4a6db45d5a40f046cea0150ec2",
@@ -33,8 +33,8 @@
     "assets/floor-tile-BeCeo7Eb.png": "a98846be42eb7cef4165b2a2abf3de29f25f8c08bd499c94f3f40d0f4fa1b8da",
     "assets/gas-planet-BvqzshRL.webp": "9d2702ddb0cc666c5ff52640935181e1444183c3c19c465c5cfc1c99387bc0cc",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
-    "assets/index-CChkQu09.css": "cd48dc45582ffc2dbd52110371a6a9fb278106132c8c78c1fff25e7b46cf2d1d",
-    "assets/index-JqqVnDs8.js": "7631e4d989a461fff68344bd515bf19c84241f56c7bdec3a4a97074b08bea659",
+    "assets/index-DeWX_mEJ.css": "a1261ec95a9c269cb3960b0f8b132df9b6a7b91f8f6265306417f8387d8ecde9",
+    "assets/index-zE8MhmUt.js": "54317b48e4ccb58898c03df26c2e128ad89e14dc27ddbc19e368f54140b8e36f",
     "assets/ion-pulse-engine-CtwWNIlN.png": "73eb7add71905cc989d030ff7f578afa7a573f81831dd8abc434ab52a68f2ccf",
     "assets/light-cannon-illustration-Cv44iBMU.png": "b9c14b4939a543ccabccab4a0d39fe660e96af16df8ec192f1e3e23981faf367",
     "assets/missiles-illustration-CnXn7lUh.png": "52f23d398401549988443f0f81ba9905e931195152fc408b1ee9987438c98ab4",
@@ -62,7 +62,7 @@
     "assets/wall-galley-BXZz_CJh.webp": "5982c9d9e27656a2280e5f88ca637d499f4c3f67bed0973abcb37be865f8c4b3",
     "assets/wall-tile-BhikcebP.png": "065d365213738fc2f3d6c4bde6710cf3ea882860ddc1067f9fa54e264ee6cc7a",
     "assets/wall-top-JWxwQSFK.webp": "f25e5ad9621b4b75b87624556fef18241f97b69f42ce9789367efbc3f5aca538",
-    "index.html": "02357aac7c5f8ea1ac5deaaa2aeeb6449b6139c2447c23d8f55ea249793c6e55",
+    "index.html": "8220bc47c786c90b6bdb3afb0c533f7a088bc57c2008cc2853b2718fbfebc247",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
