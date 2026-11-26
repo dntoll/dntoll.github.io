@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "fb7e8f52e37fc413bc55e813a2a6c851073c14d2",
+  "sourceRevision": "2ccf24827e0e48cdb1840defba856c6b5530c22a",
   "branch": "single_fleet",
   "files": {
     "assets/actions-distinct-v4-DkbdpPuU.png": "2c7264579f565de16afdcf1b3380f36501f2672852ff2ab6ac6a8baf4ba1dab5",
@@ -32,8 +32,8 @@
     "assets/floor-tile-BeCeo7Eb.png": "a98846be42eb7cef4165b2a2abf3de29f25f8c08bd499c94f3f40d0f4fa1b8da",
     "assets/gas-planet-BvqzshRL.webp": "9d2702ddb0cc666c5ff52640935181e1444183c3c19c465c5cfc1c99387bc0cc",
     "assets/ice-planet-DRln-3H3.webp": "038a5b280e434dd6a3579a0569c9865c1d027ca9631a599f22673f56cd12b6bd",
-    "assets/index-B2MjaLbC.css": "4b7f6704898364c441bd153de1ac831596c9fb4e0d42ff5154bcd479973b8fdd",
-    "assets/index-BRZAdLL-.js": "62c6da6d3fd09a7e5cb82422d170c8879cb0e475a11eaec27a2c57f2207388aa",
+    "assets/index-B8EvFV_f.css": "c77f95c3ffcaee95b8a5c188b487bb5cd6cd0e96c53d2a6dece8efe25510babb",
+    "assets/index-yJEUNgA6.js": "a17ad8a84ed676d51ed4005945685d2d9fd8c9b92e0b1f0e8d57e5c1cc071796",
     "assets/ion-pulse-engine-CtwWNIlN.png": "73eb7add71905cc989d030ff7f578afa7a573f81831dd8abc434ab52a68f2ccf",
     "assets/light-cannon-illustration-Cv44iBMU.png": "b9c14b4939a543ccabccab4a0d39fe660e96af16df8ec192f1e3e23981faf367",
     "assets/missiles-illustration-CnXn7lUh.png": "52f23d398401549988443f0f81ba9905e931195152fc408b1ee9987438c98ab4",
@@ -61,7 +61,7 @@
     "assets/wall-galley-BXZz_CJh.webp": "5982c9d9e27656a2280e5f88ca637d499f4c3f67bed0973abcb37be865f8c4b3",
     "assets/wall-tile-BhikcebP.png": "065d365213738fc2f3d6c4bde6710cf3ea882860ddc1067f9fa54e264ee6cc7a",
     "assets/wall-top-JWxwQSFK.webp": "f25e5ad9621b4b75b87624556fef18241f97b69f42ce9789367efbc3f5aca538",
-    "index.html": "670e50bcbcaae03df455fd4140a28fd3e5e927e807b7b51fdf6d65a72c94370c",
+    "index.html": "7aecfb44621514a35345172243d93f37fbe77a36b446e44e2362186ed571f471",
     "transport-ship.svg": "01b7d95f9511219fe879d85814bb1cd7a841d92440c2e9e8619a1b50250156d4"
   }
 }
